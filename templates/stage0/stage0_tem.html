@@ -1,0 +1,165 @@
+{% extends "base_tem.html" %}
+
+{% block title %}The Basics of the web and HTLML{% endblock title %}
+
+{% block head %}
+<!-- here I'll add some CSS styles -->
+<style>
+b {
+    color: orange;
+}
+
+
+span.letter {
+    color: orange;
+}
+
+span.block {
+    border-style: solid;
+    border-color: orange;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+}
+
+span.banner {
+    background-color: lightgray;
+}
+
+span.box {
+    border-style: solid;
+    border-color: orange;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 10px;
+}
+
+span.orange {
+    background-color: orange;
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+}
+
+</style>
+{% endblock head %}
+
+
+{% block content %}
+<h1>Section 0: Notes</h1>
+<p>brushed up my notes, did a bit of reflection, and ventured a bit onwards! :)</p>
+
+<h2>HTML and how the web is built</h2>
+<p>
+<span class="letter">H</span>yper<span class="letter">T</span>ext (text that can link)<br>
+<span class="letter">M</span>arkup (and have formatting)<br>
+<span class="letter">L</span>anguage <br>
+</p>
+
+<b>Tag:</b> A tag defines a section, through opening and closing tags<br>
+<b>Element:</b> That's everything within a set of opening and closing tags<br>
+<b>Attributes:</b> Are properties of an element; there can be zero up to many<br>
+
+<p>More on HTML, TCP, IP, and Internet Technology I can re-watch in my <a href="https://www.coursera.org/learn/internet-history">IHTS</a> course, starting from Section 6.</p>
+
+
+<h2>Tags</h2>
+A tag is built like this:
+<div>
+<b>&lt;</b>opening tag <i>optional</i> attributes<b>&gt;</b><br>
+<b>content</b><br>
+<b>&lt;</b>closing tag<b>&gt;</b>
+</div>
+
+example: <span class="banner">&lt;a href="www.www.com"&gt;content&lt;/a&gt;</span><br>
+
+<h4>void tags and attributes</h4>
+<p>images don't have a closing tag because they have no content (?);<br>
+this is called a "void tag"</p>
+
+<p>
+I went to discover on wikipedia how image attributes work and what they are.<br>
+Chrome's feature to "Inspect Element" is very useful. Through this and a little trying I learned about two attributes:<br>
+<b>image title:</b> text appearing when you hover with the mouse over the image<br>
+<b>image alt:</b> text that gets displayed if the image fails to load<br>
+(reddit guy said <i>image alt</i> is an easy way to make someone's day a bit sweeter : )
+		my friend &#9973; says that also for someone who is blind : )<br>
+		then I looked a bit and found many interesting things about blind people on the net, such as:
+		<a href="http://upload.wikimedia.org/wikipedia/commons/0/06/Refreshable_Braille_display.jpg">
+		    <img src="http://rlv.zcache.de/smiley_orangen_scheibe_runde_sticker-ra87b15a8fd594ff787e46453f26b89b1_v9waf_8byvr_512.jpg" style="width:20px;height:20px">
+		</a>
+		or (wow!) even:
+		<a href="http://upload.wikimedia.org/wikipedia/en/8/80/Braille_e-book.jpg" title="Braille e-book" alt="This image should display a Braille e-book. How amazing! :)">
+		    <img src="http://fc07.deviantart.net/fs70/i/2010/203/1/0/Orange_Awesome_Smiley_by_E_rap.png" style="width:20px;height:20px">
+		</a>
+</p>
+
+<h4>container elements</h4>
+&lt;span&gt; and &lt;div&gt;
+are both <b>container elements</b>:<br>
+they don't have their own content, but only contain content, still they can have styles attached to them<br>
+
+
+<h4>inline and block tags</h4>
+<p>
+What is also interesting here, is the difference between inline and block tags in HTML<br>
+<br>
+<b>inline tags</b> continue the line as it was<br>
+
+
+<div><span class="box">
+&lt;b&gt; &nbsp; &nbsp; &lt;span&gt; &nbsp; &nbsp; &lt;img&gt; &nbsp; &nbsp; &lt;br&gt; &nbsp; &nbsp; &lt;a&gt;
+</span></div>
+
+while <b>block tags</b> create a box around the content enwrapped by them.<br>
+
+<div><span class="box">
+&lt;p&gt; &nbsp; &nbsp; &lt;div&gt;
+</span></div>
+
+It's sweet to know this for formatting.<br>
+<br>
+
+
+<h2>little special infos</h2>
+
+<ul>
+<li>
+<span class="banner">
+Somewhere along the way of creating this website, I also <a href="http://www.w3schools.com">learned</a> how to use little <i>HTML symbols</i><br>
+and also how to display those symbols, that have a specific meaning in HTML, correctly in the browser.
+</span>
+<br>
+</li>
+<li>
+<p>CSS style can be used with any tags (not just &lt;p&gt;, &lt;h1&gt; etc.) e.g. also &lt;b&gt;<br>
+and also for two tags at the same time</p>
+</li>
+<li>
+<p>difference &lt;strong&gt; and &lt;b&gt;!<br>
+its in the <a href="http://stackoverflow.com/questions/271743/whats-the-difference-between-b-and-strong-i-and-em">semantics</a>!</p>
+</li>
+<li>
+<p>form allows user input; allows user to interact.</p>
+</li>
+
+<li>
+<p>some websites for editing and discovering:
+<ul>
+<li>
+<a href="http://jsfiddle.net/">jsfiddle</a>
+</li>
+<li>
+<a href="http://codepen.io/">codepen</a>
+</li>
+</ul>
+</p>
+</ul>
+
+<br>
+Also I decided, that one day I'd make an <span class="orange">orange highlight</span> website : )<br>
+
+
+{% endblock content %}

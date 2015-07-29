@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %}IPND - Stage 5{% endblock title %}</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="{% block style %}../../css/style_s5.css{% endblock style %}">
+		<script src="{% block function %}../../js/s5_javascript.js{% endblock function %}"></script>
+	</head>
+	<body>
+		<div class="nav-box">
+			<a class="nav-el" href="/">home</a>
+		</div>
+		<form>
+			<label><input id="lonely_check" type="checkbox" onclick="sayHi()">I like the color orange</label>
+			<br>
+		</form>
+		<br>
+		<form>
+			<div class="checks">
+				<p id="surprise">
+					Steps to finish the IPND:
+				</p>
+				<div id="container">
+					<div id="progress-bar"></div>
+				</div>
+				<br>
+				<label><input type="checkbox" class="checkbox" name="stage0" value="0" onclick="incrementProgressBar(0)">Sign Up</label>
+				<label><input type="checkbox" class="checkbox" name="stage1" value="1" onclick="incrementProgressBar(1)">Stage 0</label>
+				<label><input type="checkbox" class="checkbox" name="stage0" value="2" onclick="incrementProgressBar(2)">Stage 1</label>
+				<label><input type="checkbox" class="checkbox" name="stage1" value="3" onclick="incrementProgressBar(3)">Stage 2</label>
+				<label><input type="checkbox" class="checkbox" name="stage0" value="4" onclick="incrementProgressBar(4)">Stage 3</label>
+				<label><input type="checkbox" class="checkbox" name="stage1" value="5" onclick="incrementProgressBar(5)">Stage 4</label>
+				<label><input type="checkbox" class="checkbox" name="stage0" value="6" onclick="incrementProgressBar(6)">Stage 5</label>
+				<label><input type="checkbox" class="checkbox" name="stage1" value="7" onclick="incrementProgressBar(7)">Finish Up</label>
+			</div>
+		</form>
+		<br>
+		<hr>
+		{% block content %}
+		<h1>{{title}}</h1>
+		{% for topic in content %}
+			{% for key, value in topic.items() %}
+				<hr>
+				<h2>{{key}}</h2>
+				{% for subtopic in value %}
+					{% for s_key, s_value in subtopic.items() %}
+						<h3>{{s_key}}</h3>
+						{% for paragraph in s_value %}
+							<p>{{paragraph}}</p>
+						{% endfor %}
+					{% endfor %}
+				{% endfor %}
+			{% endfor %}
+		{% endfor %}
+		{% endblock content %}
+	</body>
+</html>

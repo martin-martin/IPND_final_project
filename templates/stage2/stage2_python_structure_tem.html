@@ -1,0 +1,217 @@
+{% extends "base_tem.html" %}
+
+{% block title %}Python - Structure{% endblock title %}
+{% block style %}../../css/style_s2.css{% endblock style %}
+{% block nav %}
+    <div class="nav-box">
+        <a class="nav-el" href="/">home</a>
+    </div>
+{% endblock nav %}
+{% block content %}
+	<header>
+		<h1>
+			<a href="stage2_no_back">&nbsp;P y t h o n&nbsp;</a>
+		</h1>
+		<div class="navigation">
+			<nav>
+				<a href="stage2_python_elements">Elements</a>
+			</nav>
+			<nav>
+				<a href="stage2_python_functions">Functions</a>
+			</nav>
+			<nav>
+				<a href="stage2_python_structure">Structure</a>
+			</nav>
+		</div>
+	</header>
+	<div>
+		<header>
+			<h2>
+				S t r u c t u r e
+			</h2>
+		</header>
+		<section>
+			<header>
+				<h3>
+					General Introduction
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							Search Engine
+						</h4>
+					</header>
+					<div>
+						<p>
+							I just watched 2 minutes of video and got to awareness level on what is a search engine. pretty cool! : )
+						</p>
+						<p>
+							search engines automatically skim through the HTML that all websites consist of and look for the links that are in there.
+							they make a collection of all the links they find on a page and selects the ones that are relevant.
+						</p>
+						<p>
+							A useful search engine is also a <strong>web crawler</strong>. this means they follow those links that are found this way and check out the other pages that come up in the same way. and forward forward forward. :) so cool.
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							What is a ...?
+						</h4>
+					</header>
+					<ol>
+						<li>
+							<strong>computer</strong>: it's the <em>universal machine</em>. it's like a machine, but we can make it do anything (that we manage to write a program for)
+						</li>
+						<li>
+							<strong>program</strong>: is what tells the compter which steps to take to achieve what we want.
+						</li>
+						<li>
+							<strong>precise sequence of steps</strong>: a computer acts logical, and needs good commands.
+						</li>
+						<li>
+							<strong>computation</strong>: the act of calculating stuff to achieve results
+						</li>
+						<li>
+							<strong>high-level language</strong>: code that we write, that isn't exactly how the computer would understand it
+						</li>
+						<li>
+							<strong>input</strong>: the information we give the computer to work with
+						</li>
+						<li>
+							<strong>interpreter</strong>: a program (e.g. <a class="plain_link" href="stage2_python">python</a>) that translates our written stuff into computer speach.
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Computer Language
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							General
+						</h4>
+					</header>
+					<div>
+						<p>
+							<strong>Ambiguity</strong> in languages: we can't rely that the computer would <em>interpret</em> something correctly. we have to be sure it will do what we want it to do. for this the instructions have to be written unambiguously - and this doesn't work in natural languages.
+						</p>
+						<p>
+							<strong>Verbosity</strong> in languages: there's lots and lots of words to say many things in detail, and also lots and lots of words to say basically nothing. sadly it's more often like the latter. Well... computers would get totally confused by this, as also humans do. But humans don't admit it and act like it's awesome cool to know many more words than the person they are talking to. The amount of words has to be smaller when speaking to a computer, so that the meaning of what is trying to be said can and will get transmitted more clearly. sweet.
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							Grammar
+						</h4>
+					</header>
+					<div>
+						<p class="code">
+							&lt;non-terminal&gt; <strong>--></strong> <em>replacement</em>
+						</p>
+						<p>
+							There's this <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form">&nbsp;thing&nbsp;</a> about the (context-free) form of a language. I'm not sure how much I really understand it, but it feels <a href="http://i.imgur.com/Pvtqh1z.png?1">&nbsp;very logical and exciting&nbsp;</a>!
+						</p>
+						<p>
+							I understand it a bit like references and assignement statements. nt -> rp can be a reference, if rp is another nt, nt -> te is an assignment statment. once the assignment statment has happened, that original nt is now defined and thus a <span class="code">&lt;terminal&gt;</span>.
+						</p>
+						<article>
+							<p>
+								a <a href="http://upload.wikimedia.org/wikipedia/commons/d/d9/KochFlake.svg"><strong>&nbsp;recursive definition&nbsp;</strong></a> is a function that refers to itself. in programming languages we can do this, because of how the grammar is constructed.
+							</p>
+						</article>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							<a class="plain_link" href="stage2_python">python</a> grammar
+						</h4>
+					</header>
+					<div>
+						<p>
+							the grammar rules:
+						</p>
+						<ul>
+							<li>
+								&lt;Expression&gt; <strong>--></strong> &lt;Expression&gt; Operator &lt;Expression&gt;
+							</li>
+							<li>
+								&lt;Expression&gt; <strong>--></strong> Number
+							</li>
+							<li>
+								&lt;Expression&gt; <strong>--></strong> ( &lt;Expression&gt; )
+							</li>
+						</ul>
+					</div>
+					<div>
+						<p>
+							and then you just fill in:
+						</p>
+						<ul>
+							<li>
+								Operator can be e.g. <span class="code">&nbsp;+ - * / %&nbsp;</span> ...
+							</li>
+							<li>
+								Number can be any number
+							</li>
+							<li>
+								Since &lt;Expression&gt; can be substituted with another &lt;Expression&gt;, large constructs can be made from this simple rule
+								<!-- TO FIND OUT: How can the - (minus) sign be part of a number? isn't this an Operator <Expression> construct? is the minus part of the number (meaning that a negative number is e.g. -4 and this has nothing to do with an operator)? -->
+							</li>
+						</ul>
+						<div>
+							<p>
+								So schmall so beautiful! : D
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Some Notes about Python and HTML
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<p>
+						Why are there <strong>double and single quote options</strong> in <a class="plain_link" href="stage2_python">python</a>? Because when extracting from HTML, there's often double quotes that are in-string! And on the other hand in english there's often a single quote (an apostrophe) within written language. Having only one option would close the string at a point that is actually in-string.
+					</p>
+					<p>
+						<strong>Triple quotes</strong> (either """ or ''') can be used to print multi-line strings. (but don't use it as a comment! In <a class="plain_link" href="stage2_python">python</a> that's reserved for docstrings :)
+					</p>
+				</div>
+				<div class="content">
+					<p>
+						It's better to use <strong>negative indexing</strong>, when addressing HTML text through <a class="plain_link" href="stage2_python">python</a>. For one because it's easier to count short distances, for the other because certain elements are repetitive in HTML, therefore the same structure can be easily re-used and applied to any lenght of string! Saves a lot of work :)
+					</p>
+					<article>
+						<strong>Procedure composition</strong>: a function inside a function inside a function inside a function inside a function etc.
+					</article>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<p>
+			martinmade may 2015
+		</p>
+		<p>
+			<a class="plain_link" href="stage2_python_structure">back up to the top</a>
+		</p>
+	</footer>
+{% endblock content %}

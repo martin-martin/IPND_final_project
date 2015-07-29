@@ -1,0 +1,178 @@
+/*colours used:
+#3778ad = python logo blue
+#ffdf50 = python logo yellow
+#646464 = python writing gray*/
+
+* {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Flux";
+	src: url(../font/Flux.ttf);
+}
+
+html {
+	display: table;
+	margin: auto;
+	font-family: Flux;
+	background-image: url(../img/stage2/python_pale.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+body {
+	width: 1000px;
+}
+
+.topic,
+.navigation,
+footer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex-box;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+nav {
+	font-size: 20px;
+	padding: 5px;
+	padding-left: 80px;
+	padding-right: 80px;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 30px;
+	background-color: #3778ad;
+	border-color: #ffdf50;
+	color: #ffdf50;
+}
+
+section,
+article {
+	border-style: solid;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 20px;
+	border-color: #ffdf50;
+	color: #3778ad;
+}
+
+.content {
+	width: 1px;
+	padding: 10px;
+	text-align: justify;
+	flex-grow: 1;
+}
+
+article {
+	border-style: solid;
+	border-color: #3778ad;
+}
+
+.code,
+.image,
+h1,
+h2,
+h3,
+h4 {
+	text-align: center;
+}
+
+h1 {
+	background-color: #ffdf50;
+	font-size: 80px;
+	font-weight: bolder;
+	color: #3778ad;
+	border-style: solid;
+	border-color: #3778ad;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 20px;
+}
+
+h2 {
+	border-style: solid;
+	border-color: #ffdf50;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 20px;
+	color: #3778ad;
+}
+
+h3 {
+	background-color: #ffdf50;
+	border-style: solid;
+	border-color: #ffdf50;
+	border-radius: 20px;
+}
+
+.code,
+.multi_line_code {
+	  font-family: "Fira Mono", Consolas, Menlo, Monaco, "Courier New", Courier, monospace;
+	  background-color: lightgray;
+	  color: #646464;
+	  font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: #ffdf50;
+	background-color: #3778ad;
+}
+
+footer {
+	color: #646464;
+	font-size: 12px;
+	justify-content: space-around;
+}
+
+.plain_link {
+	text-decoration: none;
+	color: #646464;
+	background-color: white;
+}
+
+.goodbye {
+	position: absolute;
+	right: 0;
+	bottom: -95px;
+}
+
+.hello {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.loop {
+	background-image: none;
+	position: absolute;
+	margin: 30px;
+	right: 50%;
+	bottom: 50%;
+	border-style: solid;
+	border-color: blue;
+	padding: 20px;
+	border-radius: 25px;
+}
+
+.loop:hover {
+	border-color: red;
+}
+
+/*this I added later on for navigation on the ipnd-all website*/
+.nav-box {
+	text-align: center;
+}
+
+.nav-el {
+	text-decoration: none;
+	color: orange ! important;
+  	background-color: transparent;
+  	font-size: 10px;
+}

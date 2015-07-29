@@ -1,0 +1,349 @@
+{% extends "base_tem.html" %}
+
+{% block title %}Python - Functions{% endblock title %}
+{% block style %}../../css/style_s2.css{% endblock style %}
+{% block nav %}
+    <div class="nav-box">
+        <a class="nav-el" href="/">home</a>
+    </div>
+{% endblock nav %}
+{% block content %}
+	<header>
+		<h1>
+			<a href="stage2_no_back">&nbsp;P y t h o n&nbsp;</a>
+		</h1>
+		<div class="navigation">
+			<nav>
+				<a href="stage2_python_elements">Elements</a>
+			</nav>
+			<nav>
+				<a href="stage2_python_functions">Functions</a>
+			</nav>
+			<nav>
+				<a href="stage2_python_structure">Structure</a>
+			</nav>
+		</div>
+	</header>
+	<div>
+		<header>
+			<h2>
+				F u n c t i o n s
+			</h2>
+		</header>
+		<section>
+			<header>
+				<h3>
+					What is a function?
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							Making a function (define)
+						</h4>
+					</header>
+					<div>
+						<p>
+							Before we can do anything with a function, we have to make it. This is called "to define a function", or, short and practical: <span class="code">&nbsp;def&nbsp;</span>.
+						</p>
+						<p>
+							Indentations are important, and this is all syntax already. write def. write function name. open parenthesis. (optional: write argument. make comma, repeat until break), close parenthesis. make colonoscopy. write code. write return. Looks like this:
+						</p>
+						<p>
+							<div class="multi_line_code">
+								<pre>def public_talk(arg1, arg2):
+    strong_arg = arg1 + arg2
+    return strong_arg</pre>
+							</div>
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							Using a function (call)
+						</h4>
+					</header>
+					<div>
+						<p>
+							then type this:
+						</p>
+						<p class="multi_line_code">
+							public_talk('taxes', 'retirement')
+						</p>
+						<p>
+							easy.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Now explain me what is a function?
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							Make it!
+						</h4>
+					</header>
+					<div>
+						<p>
+							A function is a set of commands (or a collection of lines of <a class="plain_link" href="stage2_python"> python</a> code), that is summed up inside of a name. This name is the function name and it needs to be defined using the def statement. Also the lines of code need to be written first, before we can use them. We do this by indenting after the def line, and all code we write now within this indentation level, will be part of us defining our function.
+						</p>
+						<p>
+							Note that whatever are the inputs to a function, they never get changed! Even if it's assigned to a same variable name inside. A variable inputted to a function always stays within the function. Only a return statement can produce output from the function (or a print statement). All else is in vain.
+							Look at this:
+						</p>
+						<p class="image">
+							<img src="../../img/stage2/whoa.png" title="whoa! :o" alt="surprising fact about functions">!
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							What's important to remember?
+						</h4>
+					</header>
+					<div>
+						<ul>
+							<li>
+								Functions don't share the variables with the main program. They are like a little program inside the main program
+							</li>
+							<li>
+								Functions need to be defined before they can be used. Yes, this means also locally before in the code!
+							</li>
+							<li>
+								Defining happens in the indented block
+							</li>
+							<li>
+								What comes into the functions brackets are its <em>parameters</em>. This is what the function can work with
+							</li>
+							<li>
+								Functions don't need to return anything, but for the output to be anything than a print statement, they have to
+							</li>
+							<li>
+								A function ends with a return statement. Anything written after it is less useful than something really, really useless.
+							</li>
+							<li>
+								They can make complicated and especially repetitive things much easier and faster to solve
+							</li>
+							<li>
+								In order to use the power of a function, we need not only define it, but also <em>call</em> it
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Let's define and call a function!
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<div class="multi_line_code">
+					<pre>def fun_function(weather, sleeping_bag):
+    if weather == "good":
+        if sleeping_bag:
+            print "fun!"
+    else:
+        return weather</pre>
+					</div>
+					<p>
+						Now what can we do with this? Not much maybe. But we can get three different results from running this function (not considering any of the millions of errors we could produce).
+					</p>
+					<p>
+						Given that we have the two variables weather and sleeping_bag, that could be either generated somewhere else in our <a class="plain_link" href="stage2_python"> python</a> journey, or we'd simply write them on the spot - we'd definitely have to input them as parameters into the function call's parentheses. like this:
+					</p>
+					<p class="code">
+						fun_function("good", True)
+					</p>
+					<p>
+						This we could run, and it'd produce: <span class="code">fun!</span> yay! : )
+					</p>
+					<p>
+						Here's the two alternatives, depending on our input:
+					</p>
+					<p class="code">
+						fun_function("bad", whatever)<br><br>
+						fun_function("good", False)
+					</p>
+					<p>
+						What would these function calls effectively produce? Nothing. But there's a difference between the two nothings, and we could exemplify this with the following:
+					</p>
+					<p class="code">
+						print fun_function("bad", whatever)<br><br>
+						print fun_function("good", False)
+					</p>
+					<p>
+						Our first example would (now that we ask for it) communicate to us a sensible assessment of the situation, while the second one would remain silent.
+						Of course this is due to the return statement, which is how functions effectively produce <em>output</em>. We could fix the silence of number two just by adding:
+					</p>
+					<div class="multi_line_code">
+						<pre>def fun_function(weather, sleeping_bag):
+    if weather == "good":
+        if sleeping_bag:
+            print "fun!"
+        else:
+            return "better wait a bit"
+    else:
+        return weather</pre>
+        			</div>
+        			<p>
+        				We could, if we prefer silence concerning bad news, also do the following:
+        			</p>
+        			<div class="multi_line_code">
+        				<pre>def fun_function(weather, sleeping_bag):
+    if weather == "good":
+        if sleeping_bag:
+            print "fun!"
+            return
+        else:
+            return "better wait a bit"</pre>
+            	</div>
+            	<p>
+            		Because if, in an if loop, we can terminate the function with a return statement either inside, or outside. can save the else.
+            	</p>
+            	<p>
+            		And this might be a bit of a confusing explanation of functions and what they do, but I like it : )
+            	</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					So here are some examples of functions for lists
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							a_list.index()
+						</h4>
+					</header>
+					<div>
+						<p>
+							here's one build-in method in <a class="plain_link" href="stage2_python">python</a>:
+						</p>
+						<p class="code">
+							a_list.index(value)
+						</p>
+						<p>
+							gives us the index position of the first occurrence of the value in a_list. if the value is not part of the list, it returns an error.
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							&lt;value&gt; in &lt;list&gt;
+						</h4>
+					</header>
+					<div>
+						<p>
+							another method is:
+						</p>
+						<p class="code">
+							&lt;value&gt; in &lt;list&gt;
+						</p>
+						<p>
+						this is quite an uncommon style for a <a class="plain_link" href="stage2_python"> python</a> function. what it does is returning a boolean value of True or False depending on whether the value is in the list or not. "not in" does the opposite.
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							a_list.append()
+						</h4>
+					</header>
+					<div>
+						<p>
+							append is a method! methods distinguish from functions through having a first part (the one before the period):
+						</p>
+						<p class="code">
+							a_list.append()
+						</p>
+						<p>
+							append mutates the list.
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							+
+						</h4>
+					</header>
+					<div>
+						<p>
+							Now, I know this is not a function. It just somehow found its way into here... (I don't want to be rude and throw it out. It's also kinda cute)
+						</p>
+						<p>
+							when using the <span class="code">&nbsp;+&nbsp;</span> operator on two lists, it creates a new, concatenated list object. it does not mutate the original lists.
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							len(a_list)
+						</h4>
+					</header>
+					<div>
+						<p class="code">
+							len(a_list)
+						</p>
+						<p>
+							Works for any object that consists of elements. The function counts how many elements are inside. (it also works for strings, the output being the number of characters in the string)
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Extra: while loops and for loops
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<p>
+						Something I used to forget: the <strong>break statement</strong> in while loops follows an IF condition!
+					</p>
+					<div class="multi_line_code">
+						<pre>if something:
+    break</pre>
+					</div>
+				</div>
+				<div class="content">
+					<p>
+						Sometimes it is more natural to use a while loop than a for loop, because the while loop keeps track of the index that it's working on automatically - you need to have this aspect of it, otherwise it <a href="stage2_loop">&nbsp;would run forever&nbsp;</a>! So if you're trying to get a result that is about the index, a while loop might seem more logical. And it's possible.
+						But for loops also work, one just needs to remember to insert a <strong>count</strong> that keeps track of the index position that the loop is in.
+						--> index_while_for.png
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<p>
+			martinmade may 2015
+		</p>
+		<p>
+			<a class="plain_link" href="stage2_python_functions">back up to the top</a>
+		</p>
+	</footer>
+{% endblock content %}

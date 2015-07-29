@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock title %}</title>
+	<link rel="shortcut icon" href="../img/computer.ico"/>
+	<link rel="stylesheet" href="{% block style %}{% endblock style %}">
+	<link rel="stylesheet" href="../css/style_base.css">
+	{% block head %}
+	{% endblock head %}
+</head>
+<body>
+{% block nav %}
+	<nav class="main-nav">
+		<a class="nav-el" href="{{back}}">back</a>
+		<a class="nav-el" href="/">home</a>
+		<a class="nav-el" href="{{forward}}">forward</a>
+	</nav>
+<br>
+<hr>
+{% endblock nav %}
+{% block content %}
+{% endblock content %}
+{% block footer %}
+{% endblock footer %}
+</body>
+</html>

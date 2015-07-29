@@ -1,0 +1,70 @@
+{% extends "base_tem.html" %}
+
+<!-- Same here, also depicting a stage in my progress! -->
+
+{% block title %}Lesson 1: HTML and CSS{% endblock title %}
+{% block style %}../../css/style_s1_l2-4.css{% endblock style %}
+{% block content %}
+	<div>
+		<h1>
+			The Structure of HTML documents
+		</h1>
+		<div>
+			<p>
+				The <a href="http://en.wikipedia.org/wiki/Document_Object_Model">DOM </a>(Document Object Model) is a convention of how code is written, <br>
+				that allows browsers to interact with HTML documents.
+			</p>
+			<p>
+				There are certain guidelines on how to make code better readable (e.g. indentations)
+			</p>
+			<p>
+				Especially interesting for me was to understand, that since what HTML does, <br>
+				is to give meaning to pieces of code, it is logical to also structure it in such a way.<br>
+				Therefore every piece of text (or image etc.) should be contained within a "box".<br>
+				Useful "boxes" are &lt;div&gt;, different heading tags (such as &lt;h1&gt;) and &lt;p&gt;.
+			</p>
+		</div>
+	</div>
+	<div>
+		<h1>
+			Chrome's "Inspect Element" Feature
+		</h1>
+		<div>
+			<p>
+				This is a beautiful feature that allows me to check on the source code of websites and much more:
+			</p>
+			<ul>
+				<li>
+					in one window it shows the <strong>structure of the HTML document</strong>
+				</li>
+				<li>
+					in another window it shows the <strong>CSS styles</strong>
+				</li>
+				<li>
+					hovering over a HTML line of code displays the corresponding element higlighted.<br>
+					all elements are actually a square, therefore the box around it.<br>
+					<span style="background-color:orange; color:white;">this is useful to gradually dig down to locate where is the code for a specific element!</span>
+				</li>
+				<li>
+					clicking one of those lines allows me to see the associated CSS style in the other window.<br>
+					here i can do awesome stuff:<br>
+					<span style="background-color:orange; color:white;">style features can be switched off and on and also changed!</span><br>
+					and the immediate effects are visible on the website
+				</li>
+				<li>
+					with <em>File/Save Page As.../Webpage, Complete</em> the changed website can be downloaded
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<h2>
+			Thing to remember
+		</h2>
+			<div>
+				<p>
+					...that I should just go look up something on the net, if I don't know how to do it :)
+				</p>
+			</div>
+	</div>
+{% endblock content %}

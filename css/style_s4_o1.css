@@ -1,0 +1,47 @@
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+    background-color: yellow;
+    background-image: url(../img/stage4/rainbow.png);
+    color: red;
+}
+
+header,
+h1,
+.center {
+    text-align: center;
+}
+
+h1 {
+    background-color: lightgreen;
+    color: violet;
+}
+
+h2 {
+    background-color: lightblue;
+    color: orange;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*this I added later on for navigation on the ipnd-all website*/
+.nav-box {
+  text-align: center;
+}
+
+.nav-el {
+  text-decoration: none;
+  color: orange ! important;
+  background-color: transparent;
+  font-size: 10px;
+}

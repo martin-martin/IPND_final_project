@@ -1,0 +1,123 @@
+/** {
+   outline: 1px solid red;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+
+    box-sizing: border-box;
+}
+
+
+body {
+	min-width: 800px;
+	max-width: 1400px;
+	background-color: lightgray;
+	text-align: center;
+}
+
+.flex-box {
+	display: -webkit-flex;
+	display: flex-box;
+}
+
+.third {
+	width: 33%;
+}
+
+.half {
+	width: 50%;
+}
+
+.initial {
+	width: initial;
+}
+
+.pad_small {
+	padding: 10px;
+	margin: 5px;
+}
+
+.center {
+	text-align: center;
+}
+
+.box {
+	border-style: solid;
+	border-color: orange;
+	border-radius: 25px;
+}
+
+.box_fix {
+	min-width: 400px;
+}
+
+.code {
+	background: lightgray;
+	padding: 10px;
+	margin: 5px;
+}
+
+.subtitle {
+	font-size: 11px;
+	color: white;
+	text-align: center;
+}
+
+hr.inline {
+	height: 0px;
+	border: 0px;
+	border-top: 1px solid;
+	border-color: orange;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 23, 255);
+}
+
+h1 {
+	background: orange;
+	color: white;
+	padding : 10px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 40px
+}
+
+h2 {
+	background: orange;
+	color: white;
+	padding: 5px;
+}
+
+h3, h4, strong {
+	color: orange
+}
+
+h4 {
+	border-style: solid;
+	border-width: 1px;
+	border-color: orange;
+	padding: 5px;
+	text-align: center;
+}
+
+mark {
+	background: orange;
+	color: white;
+}
+
+footer p {
+	text-align: center;
+	color: gray;
+}
+
+footer hr {
+	margin-top: 40px;
+}

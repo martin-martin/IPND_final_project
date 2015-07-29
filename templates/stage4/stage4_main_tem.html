@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		{% block title %}IPND - Stage 4{% endblock title %}
+	</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../css/{% block style %}style_s4.css{% endblock style %}">
+</head>
+<body>
+	<div class="nav-box">
+		<a class="nav-el" href="/">home</a>
+	</div>
+	{% block content %}
+	{% endblock content %}
+	<hr>
+	<footer>
+		{% block footer %}<div>
+			stage 4
+		</div>
+		<div>
+			<form method="get" action="/stage4/collection">
+				<label>
+					martinmade:
+					<input type="submit" value="Examples">
+				</label>
+			</form>
+		</div>
+		<div>
+			july 2015
+		</div>{% endblock footer %}
+	</footer>
+</body>
+</html>

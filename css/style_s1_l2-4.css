@@ -1,0 +1,131 @@
+/** {
+   outline: 1px solid red;
+}*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+
+    box-sizing: border-box;
+}
+
+* {
+	text-align: justify;
+}
+
+body {
+	min-width: 800px;
+	max-width: 1400px;
+}
+
+div.boxes, div.x, section.html div, article section.chrome{
+	display: -webkit-flex;
+    display: flex;
+}
+
+div.boxes section, div.smallbox section {
+	width: 50%;
+	padding: 10px;
+	margin: 5px;
+}
+
+div.boxes section.subsub,  section.css div.subsub {
+	width: initial;
+}
+
+div.half {
+	width: 50%;
+	margin: 20px;
+}
+
+div.third {
+	display: -webkit-flex;
+	display: flex;
+}
+
+div.third div {
+	width: 33%;
+}
+
+hr.inline {
+	height: 0px;
+	border: 0px;
+	border-top: 1px solid;
+	border-color: orange;
+	margin-top: 40px;
+}
+
+div p, figure, div.box {
+	padding: 10px;
+	margin: 5px;
+}
+
+section.html div p, figure {
+	margin: 20px;
+}
+
+figure, figcaption, /*div.box */h3.center, ol.center {
+	text-align: center;
+}
+
+p.subtitle {
+	font-size: 11px;
+	color: white;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 23, 255);
+}
+
+h1 {
+	background: orange;
+	color: white;
+	padding : 10px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	text-align: center;
+	font-size: 40px
+}
+
+h2 {
+	background: orange;
+	color: white;
+	padding: 5px;
+}
+
+h3, h4, strong {
+	color: orange
+}
+
+mark {
+	background: orange;
+	color: white;
+}
+
+div.box {
+	border-style: solid;
+	border-color: orange;
+	border-radius: 25px;
+}
+
+div.box p {
+	text-align: center;
+}
+
+div.code {
+	background: lightgray;
+	padding: 10px;
+	margin: 5px;
+}
+
+footer p {
+	text-align: center;
+	color: gray;
+}
+
+footer hr {
+	margin-top: 40px;
+}

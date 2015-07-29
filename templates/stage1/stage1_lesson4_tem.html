@@ -1,0 +1,107 @@
+{% extends "base_tem.html" %}
+
+{% block title %}Lesson 1: Constructing and testing code{% endblock title %}
+{% block style %}../../css/style_s1_l2-4.css{% endblock style %}
+{% block content %}
+	<article>
+		<header>
+			<h1>
+				Constructing and testing code
+			</h1>
+		</header>
+		<section class="chrome">
+			<div class="half">
+				<div class="box">
+					<header>
+						<h3 class="center" style="font-size: 28px;">
+							the path to good code
+						</h3>
+					</header>
+					<div style="text-align: center;">
+						<ol style="font-size: 20px;">
+							<li>
+								Basic <strong>structure</strong> (in the mind or on paper)
+							</li>
+							<li>
+								What is a <mark>&nbsp;box&nbsp;</mark>? Define &lt;div&gt;'s
+							</li>
+							<li>
+								Define repeating <strong>(semantic) elements</strong>
+							</li>
+							<li>
+								Write the <strong>content</strong>
+							</li>
+							<li>
+								Apply the <strong>CSS styles</strong>
+								<ol>
+									<li>
+										the big: <strong>size</strong> and <strong>position</strong> of boxes
+									</li>
+									<li>
+										the small: <strong>styles</strong> of elements
+									</li>
+								</ol>
+							</li>
+							<li>
+								Revisit and <strong>repair</strong>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="half">
+				<header>
+					<h2>
+						Chrome's "Inspect Element" Feature
+					</h2>
+				</header>
+				<div>
+					<p>
+						This is a beautiful feature that allows me to check on the source code of websites:
+					</p>
+					<ul>
+						<li>
+							in one window it shows the <strong>structure of the HTML document</strong>
+						</li>
+						<li>
+							in another window it shows the <strong>CSS styles</strong>
+						</li>
+						<li>
+							hovering over a HTML line of code displays the corresponding element higlighted.<br>
+							all elements are actually a square, therefore the box around it.<br>
+							<span style="background-color:orange; color:white;">this is useful to gradually dig down to locate where is the code for a specific element!</span>
+						</li>
+						<li>
+							clicking one of those lines allows me to see the associated CSS style in the other window.<br>
+							here i can do awesome stuff:<br>
+							<span style="background-color:orange; color:white;">style features can be switched off and on and also changed!</span><br>
+							and the immediate effects are visible on the website
+						</li>
+						<li>
+							with <em>File/Save Page As.../Webpage, Complete</em> the changed website can be downloaded
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<hr class="inline">
+		<section>
+			<div>
+				<header>
+					<h3 class="center">
+						Avoiding Redundancy
+					</h3>
+					<div>
+						By avoiding repeating code and style elements it's easier to <strong>keep an overview</strong>. It's very nice to know what's going on in there! :) Also it's a lot <strong>easier to change</strong> something and to <strong>create new pages</strong> using the same style, when the CSS is not bloated with different style rules that complement each other - because they might just contradict each other in a slightly different environment.
+					</div>
+				</header>
+			</div>
+		</section>
+		<footer>
+			<hr>
+			<p>
+				martinmade, may 2015
+			</p>
+		</footer>
+	</article>
+{% endblock content %}

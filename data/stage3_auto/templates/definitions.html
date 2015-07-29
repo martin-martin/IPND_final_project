@@ -1,0 +1,54 @@
+{% extends "main.html" %}
+{% block content %}<header>
+	<div class="progress">
+		<h1 class="progress-bar progress-bar-striped" style="width: {{percent}}%;">
+			IPND ({{percent}}% Complete)
+		</h1>
+		<nav>
+			<div class="left">
+				<a href="re-use_page.html">once more</a>
+			</div>
+			<div class="right">
+				<a href="finish_page.html">more</a>
+			</div>
+		</nav>
+	</div>
+</header>
+<section>
+	<header>
+		<h2>
+			General Definitions
+		</h2>
+	</header>
+	<div class="definitions">
+		{% for d in definitions %}<div class="def-box">
+			<strong>{{d[0]}}</strong>{{d[1]}}
+		</div>{% endfor %}
+	</div>
+</section>
+<section class="topic">
+	{% for key, value in content.iteritems() %}
+	<div class="content-box">
+		<header>
+			<h2>
+				{{key}}
+			</h2>
+		</header>
+		<div class="content">
+			{% for p in value %}
+			<p>
+				{{p}}
+			</p>{% endfor %}
+		</div>
+	</div>{% endfor %}
+</section>
+<hr>
+<div>
+	<h2 id="codetry">
+		You can try it out here yourself
+	</h2>
+<!-- 	this part about iframe I looked for and found as a way to embed another website in my own. source is here:
+	http://amasad.me/2015/04/09/hello-world/
+	and also mentioned in my links! -->
+	<iframe src="http://repl.it/twj/4" seamless></iframe>
+</div>{% endblock %}

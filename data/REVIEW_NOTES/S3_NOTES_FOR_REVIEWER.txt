@@ -1,0 +1,160 @@
+THESE ARE THE ANSWERS TO THE LAST FEEDBACK(S) THAT I RECEIVED. I FIGURED IT MIGHT BE IMPORTANT OR INTERESTING FOR THE NEW REVIEWER TO READ WHAT I ANSWERED TO MY LAST REVIEWER, AND WHICH CHANGES I DID COMING FROM THEIR SUGGESTIONS. PLEASE READ!
+
+
+----------------------------------------------------------------------------------------------------------
+MY ANSWERS TO MY THIRD REVIEW:
+
+Hello!
+
+Thanks for your review. I didn’t mind getting it and it was interesting to read your feedback.
+
+Thanks for responding directly to one question I wrote inside of my code as a comment -
+even though you didn’t really answer to it, it still felt a bit nice that it was being acknowledged, and I got the hint to direct myself towards using databases as my content source.
+
+I added a definition of OOP, as the rubric indeed requires (seems I didn’t catch it that there also needs to be a definition).
+I wasn’t very excited about the webpage you linked, I mean it does describe/define OOP, but I didn’t have the feeling that I was getting a lot from reading it (I just wanted to tell you this, because maybe there are better pages out there, if you’ll link one for another student).
+
+I must admit that I am not a big fan of doing these definitions, because I believe that very often knowing the definition of something doesn’t really say much about how well someone understands the topic, but oh well… this is a problem I have with this whole Stage 3 in general and not your fault at all. (So sorry for my mis-addressed complaints, I just wanted to let you know why it might have slipped my attention).
+But I did try to make this Stage a learning opportunity for myself by applying most of the things that we are supposed to define, and to myself it feels I managed quite okay.
+So I’m reasonably satisfied still : )
+
+Thanks also for reporting back to Udacity about parts that other reviewers might have missed. I think this is very important, that there is also a re-check between the people giving feedback, and, if there are parts missed or such, that the reviewer gets to know about this too. Basically, I believe feedback is also very important for the people giving feedback, so I’m happy that you are reporting back and would encourage you to keep up the good work : )
+
+
+About the rodents.html file: it was my main intention to abstractly think about OOP, and I did it in the scope of one of my self-assigned tasks of also using someone else’s code (which is where the tree structure comes in). I learned something by doing this, and I’m happy if it was also enjoyable to read for you.
+
+I thought a bit about your response about methods in OOP, and added a little paragraph to my content. I found it interesting to consider that methods are the way that my Class objects use to communicate (between each other and) to the outside. Even though I think I understood this also before, I hadn’t yet formulated it to myself like this and it feels nicely graphical : )
+(I did, however, not really understand what you meant with them being “first level citizens”).
+
+So that’s it I think, I added a definition about OOP and modified that part about methods a bit.
+
+Thanks very much for looking thoroughly at my project: that you revisited also the older files and, it seems, took some time to think about where I am and what I did.
+I didn’t give you full stars, however, because I didn’t really have the feeling that you gave me a lot of tips about directions or aspects I could improve myself. I think for me it’s really a very important part of getting feedback, and if this tips and look-outs are present, then it gives a very empowering feeling that makes me want to go out and explore, which is more important to me than just to repair.
+
+Still, thank you for a pleasant and justified review, and I wish you good luck!
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+MY ANSWERS TO MY SECOND REVIEW:
+
+Hello!
+
+Thank you very much for your feedback : D
+It felt very respectful and helpful for me.
+
+Thanks for spotting some of my mistakes and half-understandings (and imprecisions too).
+I felt nicely empowered to go back to fix my Project 3 taking into account your suggestions.
+I think that a review that leaves me with such a feeling, is indeed a good review : )
+
+So here are my responses to your comments. I tried to put them into chronological order:
+
+---------
+
+Ajajaj… Thanks for pointing this out about the link being actually two links. I’m sorry that it seems I overlooked this. It seems that I was already slightly disgruntled by my previous review, so that I then didn’t take care to look better… : / Feels like in this aspect there is an apology due to my last reviewer, though.
+
+---
+
+Thanks for the comment about the renegade file rodents.html. I understand your point, and it makes sense that it would be either auto-generated together with the other pages, or at least mentioned and explained why this is not the case.
+I chose for this situation to keep rodents.html as a separate and differently styled file, the reason for me were twicefold: one that it was a side-topic, meaning that it was something I was thinking of not as an essential part of the main project but more the product of one of my self-assigned mini-tasks. And second: that I was re-using quite a big part of someone else’s CSS to style the family tree graphics. Therefore I created a separate CSS file for this page, which then resulted in me styling it differently than the rest.
+Now I know I could add the CSS from rod_style.css into style.css and auto-generate also rodents.html, but for this project I chose to keep them separated.
+However: I understand and value your comment and will definitely think about it before I create such a structure in the future. I think it generally does makes more sense that all the pages would be generated from the same file, and that I would avoid such special cases.
+
+---
+
+In relation to your comment in the Project Review:
+It seems that I really cannot see two of the code commments that you made in the compile.py file. : /
+When collapsed, it tells me there are 4 Comments in that file, however I can only see 2 of them when I open it up.
+I’d be very interested to read that long comment you mention in the Project Review, so in case you can find a way to send it to me, I’d be very happy! : )
+My email address is xxx in case this doesn’t work across Udacity directly (although I guess there should be a way that makes it possible to do this).
+Thanks for mentioning that there might be something not working correctly and for prompting me to respond! : )
+
+---
+
+I don’t exactly know what is “factor data”! But I assume that you mean that there are some comments that I added in the main template, so it ends up becoming part of every auto-generated page?
+Still need to research more I guess (so far only found links related to R).
+
+---
+
+About the lack of indentations in my content file:
+Aah… Yes, thank you for spotting this! I went back into the content.py file and repaired the missing indentations, making the blocks of text better distinguishable from the dictionary variables that contain them. Thanks : )
+
+---
+
+About understanding methods:
+This link that you sent me seems to be very useful!
+My understanding about Class methods was so far limited to bound/unbound methods. I hadn’t yet heard about the concepts of static methods, class methods or abstract methods.
+The article felt well written and I think I understood a bit, although I know there’s still quite some work for me to do in order to be able to apply all this in my own coding : )
+But I adapted my chapter where I am writing about this according to the new information, and I also added a bit of the news I learned through that page!
+
+---
+
+Thank you for the links about the double colon :: in the CSS. I must admit that I was a bit lazy there and didn’t actually go to check it out what this really means (ajajaj… so I did a bit of just copy-paste after all… : / ) - Thanks for pointing this out for me!!! I went to read about it now, and it’s actually a very interesting concept!
+
+
+---------
+
+All in all I’m very glad about receiving your feedback and want to say thank you again : )
+I wish you good luck and keep up the good review work, it really means a lot to students and can make a big difference for the motivation of working on oneself and one’s projects!
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+MY ANSWERS TO MY FIRST REVIEW:
+
+Hello.
+Altogether I am unhappy with your review, because it feels that you didn’t even download my project to look at the webpages that I made, nor did you respond in any way to what I wrote in the  “notes for the reviewer”. This is my original message:
+
+‘’’
+Hello!
+Since I didn't have the feeling that the videos in stage 3 where good for learning the concepts deeply and more thoroughly, I wasn't too happy with this part of the ND.
+
+And about the task: I've felt dissatisfied with only writing my notes on the topic of OOP for this Project, so I tried to include my understandings about these concepts into the way how I was building the webpages.
+Please do assess how well I managed to achieve this, whether there are mistakes I am doing (I'm also interested in the small ones : ), and also whether there's better, shorter, and/or more concise ways of doing what I did.
+I'd be glad if you could give me more information about how to better connect python and html files (e.g. more info about how to make my jinja code better, or just parts that you find interesting and useful there!).
+
+I think that if you can give me a thorough and critical feedback on my project, this can make this stage still a gain for me!
+Thank you very much : )
+‘’’
+
+---
+
+Here I will answer to the comments in the Project Review section:
+
+As I tried to express in my “notes to the reviewer”, I auto-generated the pages from templates using jinja2; I largely tried to incorporate my understanding about OOP and Classes directly in the making of the pages, in order to apply it in practice, which I believe makes me learn about it much more than simply writing notes. However, I also wrote about the advantages of using OOP on the re-use_page.html and also (even though not mentioning maybe the keywords directly) in the description_page.html. I now extended this portion, and hope that my involvement and thoughts about Classes and OOP has become more visible.
+
+In my opinion, I have written a whole page about “abstract thinking”. I make a comparison of the concept of Classes to biological taxonomy (rodents.html). I do not explicitly mention how HTML and CSS concepts are similar to OOP, but the rubric does NOT require me to mention exactly this. This is just one suggestion, but it only asks for some way of abstracting the concepts (which I believe I did. If you disagree with the concepts I used to abstract the OOP concepts, please tell me more specifically and more personally about it. And please do read the grading rubric more thoroughly!)
+Also: This link that you sent me is broken:
+http://whatis.techtarget.com/definition/abstractionhttp://en.wikipedia.org/wiki/Abstraction_%28computer_science%29
+
+---
+
+Here I will answer to the comments in the Code Review section (in chronological order):
+
+I did indeed forget to run my code through the validator, so thanks for reminding me!!
+With a bit of research I also managed to fix all the errors in my HTML.
+
+I added lots of comments into nearly all of my files. I hope that this makes it a bit clearer what I was doing in my Stage 3 Project. Please do read the “notes to the reviewer”, though, because many things I had tried to express already there.
+Your non-response to my questions did however prompt me to create this README file, where I will now collect all communication and record my changes for future reviewers.
+
+I removed (nearly) all the whitespaces from my HTML documents. You didn’t seem to comment on this, but they were auto-generated using jinja2 and I hadn’t seen the mess that my templates’ whitespaces created in the final html pages.
+I adapted those templates and now it looks much better. However I did not manage to remove a few line breaks generated through how the jinja2 code is inserted in the template. If you can check out the html page and its corresponding template, try it, and give me advice on how to accomplish this, I’d be happy to hear. (I tried a bit, but it seems either it messes up the structure within the for loops or there remain these few empty lines in the generated page).
+
+I found your suggestion about the seamless attribute for iframe very interesting, however it doesn’t display correctly for me and when researching I found this (read the Note:)
+http://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_iframe_seamless
+I did however remove the non-supported attributes from the HTML and instead added the necessary style within my CSS. It’s better like this, so thanks : )
+
+I think my project repository is quite well organized. All the files that are present in my submission zip file are part of my Stage 3 Project. Templates are in a /templates folder, images in the /img folder, CSS files in the /css folder. I therefore don’t know what I could do to better organize my project. Please do clarify what was meant with this point.
+Should I put also the HTML files into a separate folder?
+
+-
+
+My CSS actually only contained one mistake: a line of code that I had copied directly from bootstrap, that did not execute and neither validate. By simply removing this line, my CSS passes.
+
+---
+
+So that’s it for my feedback to the feedback. I appreciate some parts of what I learned from re-viewing my own project, but I don’t feel that a lot came from the tips that I got from you. : /
+I would ask you to always thoroughly read the “notes to the reviewer” and answer to what was mentioned there. Do download the student’s project and look at what it is that they made in its completeness, not only fast looking into the code on the online reviewer’s page, because a lot can be missed like this.
+I hope this review of your review is also somewhat useful for you and I wish you good luck for the future.

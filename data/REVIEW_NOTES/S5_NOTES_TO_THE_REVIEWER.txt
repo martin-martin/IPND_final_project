@@ -1,0 +1,17 @@
+PLEASE READ THIS FILE COMPLETELY BECAUSE IT CONTAINS IMPORTANT INFORMATION AND EXPLANATIONS ABOUT WHAT I WAS DOING IN THIS PROJECT AND MIGHT ANSWER SOME POSSIBLE QUESTIONS.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+my URL: http://ipnd-stage-5.appspot.com/
+
+For my Stage 5 Project I chose to learn about Javascript and refresh my knowledge about JSON.
+
+I therefore created a few small Javascript examples within my webpage, and I auto-generated the page using data input from a JSON file, that I formatted accordingly.
+Further, through the last Stages, I've been using jinja2 and templates to create my webpages - here I only have one page, but I still kept working like this because I think it's very useful and practical to work with templates.
+
+I've learned quite a bit about JS on the way, and also a little more about JSON.
+
+If there are tips on how I could improve my code, I'd be very glad to hear!
+I'm very eager to learn more and better paths from experienced programmers, so I'd be very glad if you found the time to comment as many things as possible that you notice in my code! I'm here to learn more!
+
+Thanks very much and I hope you'll have a good time reading my notes-quasi-diary :)

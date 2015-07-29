@@ -1,0 +1,63 @@
+{% extends "main.html" %}
+{% block content %}<header>
+	<div class="progress">
+		<h1 class="progress-bar progress-bar-striped" style="width: {{percent}}%;">
+			IPND ({{percent}}% Complete)
+		</h1>
+		<nav>
+			<div class="right">
+				<a href="definitions_page.html">more</a>
+			</div>
+		</nav>
+	</div>
+</header>
+<section>
+	<header>
+		<h2>
+			Think, Search, Find (Adapt) and Use
+		</h2>
+	</header>
+	<div>
+		<p>
+			There are incredibly many solutions out there. Many people thought already about what to do and how to solve many problems that come up when programming.
+			If there's something I'd like to do, someone probably already did it.
+			Therefore it is extremely important to know how to search for things. Here a linklist of some useful pages that I used to look for information on, and others where I found some solutions for some questions while making this project:
+		</p>
+		<ul>
+			{% for key, value in links.iteritems() %}<li><a href="{{value}}">{{key}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div>
+		<p>
+			I have the feeling that it hardly makes sense to simply copy someone else's code that I wouldn't understand. At least I don't like this much, because I don't have the feeling I'll learn much from it.
+		</p>
+		<p>
+			But programming is somehow incremental:
+			First, coming up with the general idea. Then building a bit here and then a bit there. And with lots of those little building blocks, finally the program starts coming together. This is in my opinion also the <strong>reason why Object oriented programming is a very useful way of programming</strong>, because with Classes and objects, it creates such an environment of many self-sufficient "blocks". If I have bits of code that work and I know what I can use them for, then I can re-use them and apply them also in a different project, without having to write everything anew from scratch, thereby making the workflow much faster and more efficient. The use of Classes can also contribute to an increased security, since variables and methods described in the Class will only be made available to instances of that same Class, therefore avoiding complications with other parts of the program.
+		</p>
+		<p>
+			OOP also offers the chance to write a clear and clean modular structure, that makes it easy to maintain and modify existing code (be it that you wrote it yourself or someone else did). It is easy to create new instances, and even to create new objects through inheritance, which might require only a small amount of work to create, while still being highly functional. To refer here to my example Class on the following page: if there is a parent Class "Travels" that defines methods to calculate duration and distance, these methods could easily be inherited to possible children Classes, such as "Biking" or "Hiking". This is nicely logical, clean, and saves a lot of work.
+		</p>
+		<p>
+			Also other people's code can often be one of these building blocks. And maybe their code doesn't fit <em>exactly</em>, but the cool thing about these blocks is, that they are completely moldable. I can take, change a bit on that corner and make it so the pieces fit together into my own puzzle.
+		</p>
+	</div>
+	<div>
+		<hr>
+		<p>
+			<strong>Tasks for myself:</strong> Make some small projects that use other people's code (but do what I want). Include them in this website.
+		</p>
+		<ol>
+			<li>
+				By <strong><a href="img/jinja_templates.png" title="one of my jinja templates">using jinja2 to create this webpage</a></strong>, I went through the relevant code presented in Stage 4. After reading through it, I adapted some of it, attained a better understanding of jinja2, and finally used it for generating page content.
+			</li>
+			<li>
+				I am also trying to <strong>include an IDE into my website</strong>, so I can show some example code that could be executed by the user in order to exemplify OOP and the associated concepts (see <a href="definitions_page.html">the following page</a>).
+			</li>
+			<li>
+				I used some CSS from Bootstrap to create a <strong>progress bar</strong>, representing my current standing in the IPND. It's maybe unnecessary to have it here, but I want to get practice using them because I intend to make them a bigger part in one of my following projects.
+			</li>
+		</ol>
+	</div>
+</section>{% endblock %}

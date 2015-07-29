@@ -1,0 +1,303 @@
+{% extends "base_tem.html" %}
+
+{% block title %}Python - Elements{% endblock title %}
+{% block style %}../../css/style_s2.css{% endblock style %}
+{% block nav %}
+    <div class="nav-box">
+        <a class="nav-el" href="/">home</a>
+    </div>
+{% endblock nav %}
+{% block content %}
+	<header>
+		<h1>
+			<a href="stage2_no_back">&nbsp;P y t h o n&nbsp;</a>
+		</h1>
+		<div class="navigation">
+			<nav>
+				<a href="stage2_python_elements">Elements</a>
+			</nav>
+			<nav>
+				<a href="stage2_python_functions">Functions</a>
+			</nav>
+			<nav>
+				<a href="stage2_python_structure">Structure</a>
+			</nav>
+		</div>
+	</header>
+	<div>
+		<header>
+			<h2>
+				E l e m e n t s
+			</h2>
+		</header>
+		<section>
+			<header>
+				<h3>
+					Variables
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							What are Variables?
+						</h4>
+					</header>
+					<div>
+						<p>
+							Variables in <a class="plain_link" href="stage2_python">python</a> are what we are basically working with. They are references to any <a class="plain_link" href="stage2_python">python</a> element.
+						</p>
+						<p class="image">
+							<img src="../../img/stage2/assignments.png" title="how to imagine this" alt="some example variables and values, and little assignment arrows" height="180px" width="380px">
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							Assignment Statement
+						</h4>
+					</header>
+					<div>
+						<p>
+							An <strong>assignement</strong> statement connects a variable to a specific <strong>value</strong>.
+						</p>
+						<p class="code">
+							&lt;variable&gt; = &lt;value&gt;
+						</p>
+						<p>
+							It behaves like structural language according to the Backus-Naur form. This means the right side of the statement always gets evaluated first!
+						</p>
+						<p>
+							something like <span class="code">minutes = minutes + 1</span> is not possible and produces an error.
+						</p>
+						<p>
+							In Python the <strong>=</strong> sign is used for an assignment, but imagine it to be an arrow <strong>&lt;=</strong>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Numbers and Booleans
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							Numbers: Arithmetics
+						</h4>
+					</header>
+					<div>
+						<p>
+							this is a number: 2<br>
+							and this another one: 12
+						</p>
+						<p>
+							we can do arithmetics with them! all these mathematical symbols work as expected:
+						</p>
+						<p class="code">
+							+&nbsp;&nbsp;-&nbsp;&nbsp;*&nbsp;&nbsp;/
+						</p>
+						<p>
+							like this: 2 + 12<br>
+							and as a result we get: 14<br>
+							yay!
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							Numbers: Floating Points
+						</h4>
+					</header>
+					<div>
+						<p>
+							<a class="plain_link" href="stage2_python">python</a> makes bold simplifications if you allow it to!
+						</p>
+						<p>
+							In order to make decimals be considered in the output, one number in the calculation has to be <strong>float</strong> (=floating point).
+						</p>
+						<p>
+							we do this: 2.0 + 12<br>
+							and get this: 14.0<br>
+							other examples make the use of this more obvious. think of pi!
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							Boolean Operators
+						</h4>
+						<p >
+							can have one of two possible states: <strong>True</strong> or <strong>False</strong>. <a href="http://en.wikipedia.org/wiki/Boolean_algebra#Operations">&nbsp;Learn more here&nbsp;</a>
+						</p>
+					</header>
+					<div>
+						<div>
+							<p class="code">
+								&lt;value&gt; <strong>and</strong> &lt;value&gt;
+							</p>
+							<p>
+								<strong>True</strong> if both values are true, in any other case it evaluates to <strong>False</strong>.
+							</p>
+						</div>
+						<div>
+							<p class="code">
+								&lt;value&gt; <strong>or</strong> &lt;value&gt;
+							</p>
+							<p>
+								<strong>False</strong> only if both values are false, otherwise it evaluates to <strong>True</strong>.
+							</p>
+							<p>
+								<strong>ATTENTION</strong>: due to this property, <a class="plain_link" href="stage2_python">python</a> checks the first variable first. If it evaluates to True, it doesn't check the second one! Therefore the statement could become True, even if the second variable would produce an error! Only if the first variable is False <a class="plain_link" href="stage2_python">python</a> checks also the second one.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Structured Data: Strings
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+					<header>
+						<h4>
+							Strings
+						</h4>
+					</header>
+					<div>
+						<p class="code">
+							<strong>'</strong>string<strong>'</strong>&nbsp;&nbsp;<strong>"</strong>string<strong>"</strong>&nbsp;&nbsp;<strong>'''</strong>string<strong>'''</strong>&nbsp;&nbsp;<strong>"""</strong>string<strong>"""</strong>
+						</p>
+						<p>
+							Use accordingly! e.g. in English there are many ' inside words, they'd close a '' string, so better use "". And in HTML there's many "" e.g. around class names. Can't make a proper string when the symbol interferes, so better take the other one. And these ones ''' make it possible to create multi-line strings. important for e.g. HTML formatting (or <a href="http://www.codeskulptor.org/#user40_oLgJt0okPb_0.py">&nbsp;other things : )&nbsp;&nbsp;</a>)!
+							<!-- TODO: how do I embed a little Python program directly on my page? -->
+						</p>
+						<p>
+							Strings can be added to other strings with the + operator, however they cannot be added to elements of another type.
+						</p>
+						<p class="code">
+							'a' + '2' =&GT; 'ab' &nbsp; &nbsp; &nbsp; &nbsp; 'a' + 2 =&gt; ERROR
+						</p>
+						<p>
+							It is possible, however, to multiply a string with a number:
+						</p>
+						<p class="code">
+							'a' * 20 =&gt; 'aaaaaaaaaaaaaaaaaaaa'
+						</p>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h4>
+							Strings and Lists...
+						</h4>
+					</header>
+					<div>
+						<ol>
+							<li>
+								Contain structured elements.
+							</li>
+							<li>
+								Can be accessed through their index: a_string[index_num] and a_list[index_num]<br>
+								The index of a structured element starts with 0 and counts upwards from left to right and downwards from right to left (the last element is therefore -1).
+								<p>
+									here's a list with its index numbers as elements:<br>
+									index_list = [0, 1, 2 , 3]<br>
+									Watch out not to confuse elements with index numbers!
+								</p>
+							</li>
+							<li>
+								We can also access certain parts, through <strong>slicing</strong>.<br>
+								string[0:2] returns the first two letters of the string. [start:stop] means "start - up to but not including -end". Note that characters are the elements in strings. then there's things like this [:], [3:], [2:], [4:-1] etc., but I know what this does.
+								<p>
+									When slicing from or into a non-existing index point, it does not produce an error. If, however, you try to index a non-existing index point, it does.
+								</p>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<header>
+				<h3>
+					Structured Data: Lists
+				</h3>
+			</header>
+			<div class="topic">
+				<div class="content">
+		    		<header>
+		    			<h4>
+		    				General
+		    			</h4>
+		    		</header>
+		    		<div>
+		    			<p>
+		    				Lists are a very important element in the <a class="plain_link" href="stage2_python">python</a> programming language. There's lots of stuff one can do with lists! They get made (and displayed) with <span class="code">&nbsp;[ ]&nbsp;</span class="code">. Lists can also be nestedly created and accessed! list[1][0] etc.
+		    			</p>
+		    			<p class="image">
+		    				<img src="../../img/stage2/listbox.png" title="different colours, different things : )" alt="displays a list as a sequence of boxes!">
+		    			</p>
+		    		</div>
+		    	</div>
+		    	<div class="content">
+		    		<header>
+		    			<h4>
+		    				return or no return
+		    			</h4>
+		    		</header>
+		    		<div>
+		    			<p>
+		    				When mutating a list that is outside of a function (and gets passed in as an input), there is no need for a return statement, because through aliasing the passed in list is an alias to the original referral to the same list. mutations that happen to the alias list referral inside the function to the changes in the actual list, which is also referred to by the original referral outside. but since it is the object that gets changed, it is automatically also reflected when we later call the original referral. bam! <a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4152219158/e-48746083/m-48695590">&nbsp;watch 2.6 "Replace Spy"&nbsp;</a> We need the return statements in functions when we are dealing with non-mutable objects. because then the passed-in value gets assigned to a new value if it is changed within the function, but this then does not have anything to do anymore with what the original value refers to. In lists this is different because they are mutable (therefore, if the function is just about mutating the list, there is no need for a return statement!)
+		    			</p>
+		    		</div>
+		    	</div>
+	    	</div>
+	    	<div class="topic">
+		    	<div class="content">
+		    		<header>
+		    			<h4>
+		    				Mutating
+		    			</h4>
+		    		</header>
+		    		<div>
+		    			<p>
+		    				List's can get mutated (strings not). Mutating a list does not modify the original value, it instead creates a new value that the list position gets assigned to. we simply don't have a way to refer to the original value anymore. Doing an assignment statement on a certain position of the list brings in a new value and assigns it to that position, dropping the old assignment.
+		    			</p>
+		    		</div>
+		    	</div>
+		    	<div class="content">
+		    		<header>
+		    			<h4>
+		    				Aliasing
+		    			</h4>
+		    		</header>
+		    		<div>
+		    			<p>
+		    				What assignment statements basically do, is to refer to a certain variable. This means that p = [] refers to a list object. now with lists you can do this: q = p which makes another "link" to that same list. Therefore doing any changes through mutating q, will also be reflected in p (since they refer to the same list!). James Bond and 007 both always refer to the same object, even when something (or everything!) about the object changes. can even be a different person! :)
+		    			</p>
+		    		</div>
+        		</div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<p>
+			martinmade may 2015
+		</p>
+		<p>
+			<a class="plain_link" href="stage2_python_elements">back up to the top</a>
+		</p>
+	</footer>
+{% endblock content %}

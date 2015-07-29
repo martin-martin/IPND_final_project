@@ -1,0 +1,239 @@
+{% extends "base_tem.html" %}
+
+{% block title %}Lesson 1: Structuring a website{% endblock title %}
+{% block style %}../../css/style_s1_l2-4.css{% endblock style %}
+{% block content %}
+	<article>
+	<!-- I have not completely understood how to use these semantic elements, I understood a little and gave it a try. If there's comments on wrong use or tipps for improvement, please say! -->
+		<header>
+			<h1>
+				Structuring a website
+			</h1>
+			<p class="subtitle">
+				Okay. So I'll try to make this clean. Clean and pretty. There's enough mess around and maybe the eyes can relax better with a little bit of structure.
+				Also I like how computers think and always found it fair to learn a country's language, when I plan on being there for a while.
+				So let's make things come together. :)
+			</p>
+		</header>
+		<section class="html">
+			<header>
+				<h2>
+					the HTML side
+				</h2>
+			</header>
+			<div>
+				<p>
+					The <a href="http://en.wikipedia.org/wiki/Document_Object_Model">DOM </a><strong>(Document Object Model)</strong> is a convention of how code is written,
+					that allows browsers to interact with HTML documents.
+					There are certain guidelines on how to make code better readable (e.g. indentations). You can use Chrome's <a href="lesson4.html">Inspect Element</a> to see the html code of this and any page.
+				</p>
+				<p>
+					Especially interesting for me was to understand, that since what HTML does,
+					is to give meaning to pieces of code, it is logical to also structure it in such a way.
+					Therefore every piece of text (or image etc.) should be contained within a <mark>&nbsp;box&nbsp;</mark>. <mark>&nbsp;Useful&nbsp;</mark> <mark>&nbsp;boxes&nbsp;</mark> <mark>&nbsp;are&nbsp;</mark> &lt;div&gt;, different heading tags (such as &lt;h1&gt;) and &lt;p&gt;.
+					<!-- In case you wonder about the little orange boxes, I made them because I find the highlight function sweet, because it makes me think of things in boxes, and as a little game for myself. :) There's a mini tiny riddle in there as why which words are highlighted, and I'm sure you already found it out :) -->
+				</p>
+				<p>
+					And then there are <strong>semantic elements</strong>, that take this <em>meaning</em> thing even further. These <mark>&nbsp;are&nbsp;</mark> <mark>&nbsp;boxes&nbsp;</mark> <mark>&nbsp;as&nbsp;</mark> well, but they also carry information about what's within.
+					I read a bit about them <a href="http://www.w3schools.com/htmL/html5_semantic_elements.asp">here</a>, and I tried to use some in this document, but I didn't completely get it yet.
+				</p>
+			</div>
+		</section>
+		<section class="css">
+			<header>
+				<h2>
+					the CSS side
+				</h2>
+					<div class="third">
+						<div class="box">
+							<p>
+								Work this way:
+							</p>
+							<p style="font-size: 20px">
+								Big concepts --> smaller details.
+							</p>
+						</div>
+					<div>
+						<figure>
+							<figcaption>Step 1: start by creating a frame:</figcaption>
+							<img src="../../img/stage1/outline.png" title="this makes squares!" alt="this displays some code that creates an outline structure. It's actually not so important here at this point. So don't worry :)">
+						</figure>
+					</div>
+					<div>
+						<p>
+							<br>
+							Adding this in the CSS file shows you the edges of <mark>&nbsp;the&nbsp;</mark> <mark>&nbsp;boxes&nbsp;</mark> <mark>&nbsp;that&nbsp;</mark> contain all the stuff.<br>
+							It's a bit like drawing squares on a piece of paper, which also seems to be very useful to understand the desired structure.
+							Actually, maybe better start on that piece of paper. :)
+						</p>
+					</div>
+				</div>
+			</header>
+			<hr class="inline">
+			<div class="boxes">
+				<section class="sub">
+					<header class="sub">
+						<h3>
+							CSS and inheritance
+						</h3>
+					</header>
+					<div>
+						<div>
+							<p>
+								The code in the image further up is written in <strong>CSS</strong>. This is a programming language that is often used together with HTML.<br>
+								CSS is pretty neat because with this it's possible to make a lot of structuring and heaps of prettyness.
+								Also, it can be done very compactly, and can be made transportable and applied on many different sites.<br>
+								Although there are other possibilities, it's best practice to create a separate CSS file to store that code.
+								Often it is called
+								<strong>style.css</strong>
+							</p>
+							<div class="box">
+								<p>
+									CSS style has a specific <strong>order of importance</strong>, that are stronger in descending order:
+								</p>
+								<ul>
+									<li>
+										browser default
+									</li>
+									<li>
+										stylesheet (css in a separate file)
+									</li>
+									<li>
+										&lt;style&gt;...&lt;/style&gt; inside the html doc
+									</li>
+									<li>
+										inline style in an element (should be avoided!)
+									</li>
+								</ul>
+							</div>
+							<p>
+								CSS means <strong>C</strong>ascading<strong>S</strong>tyle<strong>S</strong>heets. The "cascading" describes <strong>inheritance</strong>.<br>
+								This means that the styles of parent tags get inherited by child elements,
+								although if there are different styles assigned they take effect in the above order.
+							</p>
+						</div>
+						<section class="subsub">
+							<header class="subsub">
+								<h4>
+									CSS syntax
+								</h4>
+							</header>
+							<div>
+								<div>
+									<p>
+										CSS commands are written in the following syntax:
+									</p>
+									<div class="code">
+										selector {<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;style_rule: attribute;<br>
+										}
+									</div>
+								</div>
+								<p>
+									If the <a href="https://css-tricks.com/how-css-selectors-work/">selector</a> is a HTML tag then this applies to all same tags present in the document.
+								</p>
+								<!-- What else can be a selector, if not a HTML tag? -->
+								<p>
+									There's a whole world of selectors out there,
+									so here's a link to a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">collection </a> of what can be done.<br>
+									It's a lot.
+									And yes: pretty neat things :)
+								</p>
+							</div>
+						</section>
+						<section class="subsub">
+							<header>
+								<h4>
+									Practice materials and links:
+								</h4>
+							</header>
+							<div>
+								<p>
+									A <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/index.html">link</a> to some little website materials to inspect.
+								</p>
+							</div>
+						</section>
+					</div>
+				</section>
+				<section class="sub">
+					<header class="sub">
+						<h3>
+							<mark>&nbsp;box&nbsp;</mark> sizing
+						</h3>
+					</header>
+					<div>
+						<p>
+							One thing I learned before, is that it is good to semantically structure the page <mark>&nbsp;in&nbsp;</mark> <mark>&nbsp;boxes&nbsp;</mark> <mark>&nbsp;.&nbsp;</mark> What belongs together should also be grouped together.
+							For this we can use &lt;div&gt; and &lt;span&gt;, which are both block elements. Block elements <mark>&nbsp;create&nbsp;</mark> <mark>&nbsp;boxes&nbsp;</mark> <mark>&nbsp;.&nbsp;</mark> Which is good.
+							But block elements take by default the whole space of the page from left to right.
+
+							So in order to display something next to something else, while still keeping it in a <mark>&nbsp;box&nbsp;</mark>, we need CSS.
+						</p>
+						<div>
+							<p>
+								Just in the way that other style attributes get assigned to a certain selector, we add:
+							</p>
+							<div class="code">
+								selector {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br>
+								}
+							</div>
+							<p>
+								which allows those block elements, that are  <mark>&nbsp;sub&nbsp;</mark> - <mark>&nbsp;boxes&nbsp;</mark> <mark>&nbsp;of&nbsp;</mark> the selector element, to appear next to each other.
+							</p>
+						</div>
+						<div>
+							<p>
+								Since different browsers have different standards, we have to write this at the beginning to make this possible:
+							</p>
+							<div class="code">
+								* {<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;-webkit-box-sizing: border-box;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;-moz-box-sizing: border-box;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;-ms-box-sizing: border-box;<br>
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;box-sizing: border-box;<br>
+								}
+							</div>
+							<div>
+								<p>
+									For displaying the flex-<mark>&nbsp;box&nbsp;</mark> feature in Safari, it's necessary to aditionally add: "display: -webkit-flex;" into the selector's curly braces.
+								</p>
+							</div>
+						</div>
+						<p>
+							More on sizing: <a href="http://www.w3schools.com/cssref/css3_pr_box-sizing.asp"> W3Schools</a>
+						</p>
+					</div>
+					<section class="subsub">
+						<header>
+							<h4>
+								Extra Notes
+							</h4>
+						</header>
+						<div>
+							<ol>
+								<li>
+									<mark>&nbsp;Box&nbsp;</mark> sizes can be given in percentages too.
+									This is very useful because it allows the website to keep its formatting on different screen sizes.
+									Also changes in window size do not make such weird effects.
+								</li>
+								<li>
+									There's also the possibility to define max_width and max_height.
+									When the <mark>&nbsp;box&nbsp;</mark> is smaller than the defined max_width, then its size changes when the window size does,
+									when it reaches the defined max, it doesn't change anymore.
+								</li>
+							</ol>
+						</div>
+					</section>
+				</section>
+			</div>
+		</section>
+		<hr>
+		<footer>
+			<p>
+				martinmade, may 2015
+			</p>
+		</footer>
+	</article>
+{% endblock content %}

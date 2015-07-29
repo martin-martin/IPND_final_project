@@ -1,0 +1,190 @@
+{% extends "base_tem.html" %}
+
+{% block title %}Animal Classes{% endblock title %}
+{% block style %}../../css/style_s3_rod.css{% endblock style %}
+{% block content %}
+<!-- I chose not to auto-generate this page together with the others, because I built it as a side-project with the intention of
+using someone else's code (the tree structure defined in rod_style.css). Therefore I also wrote the HTML in a different
+situation and with different intentions than the ones for the other pages.
+Since these projects are mainly a learning opportunity, there are several steps that came to be incrementally, and are
+therefore not connected in the most logical way.
+I received the feedback that it makes sense to generate all the pages in the same way - or otherwise at least mention why
+this page was created differently. I agree with this approach very much, would if starting a new project (and with some
+learnings that I did through doing this project) try to be consistent with generating the pages.
+However, since I also like to see my learning progress, I prefer to keep this file for this project in the spirit in which
+it was created, and hope that my comment here can explain why I chose to do this. :) -->
+	<h1>
+		The concept of Classes while looking at mouses and their relatives
+	</h1>
+	<section>
+		<header>
+			<h2>
+				The basic structure of a taxonomic tree in biology, and a try for programming
+			</h2>
+		</header>
+		<div class="text-box">
+			<div class="tree">
+				<ul>
+					<li>
+						<span>Order</span>
+						<ul>
+							<li>
+								<span>Species</span>
+								<ul>
+									<li>
+										<span>Individuum 1</span>
+									</li>
+									<li>
+										<span>Individuum 2</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span>Species</span>
+								<ul>
+									<li>
+										<span>Individuum 1</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tree">
+				<ul>
+					<li>
+						<span>Class</span>
+						<ul>
+							<li>
+								<span>Object</span>
+								<ul>
+									<li>
+										<span>Instance</span>
+									</li>
+									<li>
+										<span>Instance</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span>Object</span>
+								<ul>
+									<li>
+										<span>Instance</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>
+			An Example
+		</h2>
+		<p>
+			Now let's assume we are looking at the <em>Order</em> Rodents. Even though many animals that are part of it look very different from each other. But they share some characteristics (or a basic blueprint) that makes us group e.g. a mouse and a capybara together. This can entail both <em>states</em> (e.g. how their skull is constructed) as well as <em>behaviours</em>. <br>Somewhere high up the ancestral tree: they are both rodents.
+		</p>
+		<p>
+			<br>Now, Rodents could be considered our Class, while mouses and capybara could be considered objects of that Class. And then, further down the line, our actual representations of the mouses and the single capybara that I drew here, would be the instances of this (simplified) Class.
+		</p>
+		<p>
+			<br>There's so much messy discussion about this taxonomy out there in the world of biology, so my analogy is probably wrong on so many ends, that it's not even worth counting them... But it does make some things understandable for me in terms of programming.
+		</p>
+		<div class="text-box">
+			<div class="tree">
+				<ul>
+					<li>
+						<span>Rodents</span>
+						<ul>
+							<li>
+								<span>Mouses</span>
+								<ul>
+									<li>
+										<img src="../img/stage3/mouse_1.png" alt="drawing of mouse 1" width="50" height="32">
+									</li>
+									<li>
+										<img src="../img/stage3/mouse_2.png" alt="drawing of mouse 2" width="32" height="32">
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span>Capybara</span>
+								<ul>
+									<li>
+										<img src="../img/stage3/capybara.png" alt="drawing of a capybara" width="200" height="130">
+									<li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>
+			"Reality"
+		</h2>
+		<p>
+			The Order "Rodents" contains certain abstract information about how is a rodent built. By looking at a real Mouse, I am looking at a Rodents object.
+		</p>
+		<div class="text-box">
+			<div class="tree">
+				<ul>
+					<li>
+						<span>Rodents</span>
+						<ul>
+							<li>
+								<span>Mouses</span>
+							</li>
+							<li>
+								<span>Capybara</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h2>
+			Instantiation
+		</h2>
+		<p>
+			To be able to actually interact with a little mouse, I'll have to <strong>instantiate</strong> a mouse object. This happens in the following call: <code>mouse_1 = Rodents()</code>.
+		</p>
+		<div class="text-box">
+			<div class="tree">
+				<ul>
+					<li>
+						<span>Mouses</span>
+						<ul>
+							<li>
+								<img src="../img/stage3/mouse_1.png" alt="drawing of mouse 1" width="100" height="65">
+							</li>
+							<li>
+								<img src="../img/stage3/mouse_2.png" alt="drawing of mouse 2" width="65" height="65">
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tree">
+				<ul>
+					<li>
+						<span>Object</span>
+						<ul>
+							<li>
+								<span>Instance</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endblock content %}

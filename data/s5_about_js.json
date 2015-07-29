@@ -1,0 +1,125 @@
+[
+	{ "INTRO" :
+		[
+			{ "Why I chose to learn more about Javascript" :
+				[ "I decided to dive a little bit into learning more about Javascript. Two reasons why were, because a lot of this ND was after all about Webdesign,and JS is one of the three fundamental languages to know when creating websites, and secondly it was interesting for me to see whether it would be easier to understand a second programming language, now that I know a little bit about python.",
+					"And it did! In some ways JS is quite similar to python, maybe on a structural programming-language-base. This made it much easier for me to understand what to do and in what ways to formulate e.g. a function or an if loop.",
+					"I also set myself a small goal that I wanted to achieve for this research into Javascript, which was to create a progress bar that would eventually connect all the pages of my previous Stage projects, using Javascript."
+				]
+			}
+		]
+	},
+	{ "SOME INTERESTING FACTS ABOUT JAVASCRIPT" :
+		[
+			{ "What's this Javascript?" :
+				[ "Javascript is a programming language, and the one that is used the most widely on the internet.",
+					"It allows to give functionality and interactivity to websites, dynamically changing content or asking for and responding to user interactions.",
+					"Javascript was designed by Brendan Eich in 1995 and is, contrary to what the name might suggest, largely distinct from the Java programming language."
+				]
+			},
+			{ "Structure" :
+				[ "The elements of the Javascript language are either Javascript Objects or 'primitive values'. Objects consist of name : value pairs (names mapping to values). Values can contain other objects (e.g. these CAN be objects: booleans, strings, numbers; these are ALWAYS objects: dates, maths, regex, arrays).",
+					"Basically, nearly everything in Javascript is an Object - with the exceptions of primitive values: strings, numbers, true, false, null and undefined."
+				]
+			},
+			{ "Javascript Objects are Mutable" :
+				[ "Objects are mutable: They are addressed by reference, not by value. If y is an object, the following statement will not create a copy of y:",
+					"var x = y;  // This will not create a copy of y.",
+					"The object x is not a copy of y. It is y. Both x and y points to the same object. Any changes to y will also change x, because x and y are the same object."
+				]
+			},
+			{ "this" :
+				[ "reading some posts on stackoverflow, I repeatedly encountered 'this' within some of the javascript posted there in a thread. At first I was wondering whether this is a clever way of reducing one's code in order to have as little personal information as possible... But reading more on W3Schools I finally discovered that 'this' is actually a keyword in javascript:",
+					"In Javascript, the thing called this, is the object that 'owns' the JavaScript code.",
+					"The value of this, when used in a function, is the object that 'owns' the function.",
+					"The value of this, when used in an object, is the object itself.",
+					"The this keyword in an object constructor does not have a value. It is only a substitute for the new object.",
+					"The value of this will become the new object when the constructor is used to create an object.",
+					"Note that this is not a variable. It is a keyword. You cannot change the value of this.",
+					"In my head I compared it to python's 'self'. But it's still a bit confusing. :)"
+				]
+			}
+		]
+	},
+	{ "MY PATH OF DISCOVERY" :
+		[
+			{ "Part I" :
+				[ "Since I (obviously) encountered a few problems on my Javascript journey, my research lead me down the DOM paths and into structual realms.",
+					"While writing the function for the progress bar, I often ran into problems with calling the Javascript objects. console.log() was a great help, even though slightly more difficult to handle than python's print statement.",
+					"When trying to access elements, tags, ids or names inside the DOM, I often got the Error message, that some property of 'undefined' cannot be accessed, or that 'null' does not have this or that (not 'this'... haha). I've also looked at quite a few working code bits from the internet, and found that some throw the same error, however they would still have their functionality. I read quite a bit around this topic, the guide on accessing the DOM with JS was quite interesting, and I also often managed to make it work, however I still don't completely understand what was my initial mistake here. (Many resulted from actually calling a wrong object, slightly wrongly accessed or such. Maybe all did. Just some I resolved until understanding, some I didn't (yet)).",
+					"But, I guess one doesn't learn JS in a few days :)",
+					"One of these mistakes unfolded itself to me like this:",
+					"One of these mistakes unfolded itself to me like this:",
+					"var x = document.getElementById('id-value');",
+					"seemed to work, but:",
+					"var x = document.getElementsByClassName('class-name');",
+					"did not.",
+					"Using console.log() I learned that the second outputs (it seemed) a list. However the contents of this 'list' were not properly understandable or accessible to me in the way I knew to access lists.",
+					"So I had to learn more.",
+					"I went forward on to understand what Objects in Javascript actually are, and how they are constructed. This was quite an excting part of the research. The analogy to python dictionaries was very easy to grasp, so I understood that they consist of key : value pairs (in JS these are name : value). Values can further contain other objects (booleans, strings, numbers; dates, maths, regex, arrays). Basically, nearly everything in Javascript is an Object - with the exceptions of primitive values: strings, numbers, true, false, null and undefined.",
+					"And there's this good sum-up sentence from W3Schools:",
+					"'JavaScript objects are containers for named values, called properties and methods.'",
+					"As I wrote before, 'undefined' was what I got a lot when I was trying to pass some new value onto a DOM search, that would supposedly return me some HTML element as a javascript object.",
+					"With understanding a bit better what these objects are, and how they are constructed my chances to resolve this issue brightened up. So what I was getting returned was an array. And the array is a Javascript object. Good.",
+					"So I dug further into array methods.",
+					"Having a certain understanding about the nature of Object oriented Programming, about what Classes and methods are, made it a little bit easier to grasp some of these concepts of Javascript and to work towards understanding its structured and methods in order to be able to manipulate its objects.",
+					"I read here: https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection",
+					"So I started to manage to make sense of console outputs such as what I'd get from this bit of JS code:",
+					"var unchecked = document.getElementsByClassName('unchecked')",
+					"for (i in unchecked) {",
+					"    console.log(i, unchecked.item(0))",
+					"}",
+					"console.log(unchecked.item(0))",
+					"Console Output:",
+					"0",
+					"1",
+					"length",
+					"check",
+					"item",
+					"namedItem",
+					"<form id='check' class='unchecked' value='1'></form>",
+					"My two instances of elements that contain the Class name 'unchecked' are stored as values to the names 0 and 1, further in the array (or HTMLCollection object) there is one property 'length' and two methods 'item' and 'namedItem'. To display one of my elements, I am actually calling one of these methods through unchecked.item()! It was interesting for me to understand that the item(s) and the methods are both elements of the same array (the same HTMLCollection object)."
+				]
+			},
+			{ "Part II" :
+				[ "Alltogether it gave me quite a few problems, this Javascript!",
+					"From small things such as getting the curly braces right and remembering to put the semicolon at the end, to also more serious structural questions.",
+					"Trying to get these multiple checkboxes to work, with them submitting separately seemed to be a tough job (for a beginner).",
+					"'this.'' was not the right path",
+					"Through my previous research, I was now able to work with getElmentsByClassName(), by then accessing the resulting array. I discovered for loops that had a form I hadn't seen before (and although I understood why I'd need them - see above the part about how HTMLCollectionObjects are constructed, containing not only the values I'd want to iterate over, but also methods and properties - I don't entirely understand how they function yet)",
+					"But, slowly, I managed to get quite some functionality of the progress bar to work.",
+					"My checkboxes were finally producing different outputs, depending on whether they are ticked on or off,",
+					"I was able to have multiple checkboxes that would produce individual behaviour.",
+					"Now, what was left to do is this:",
+					"I needed them not to fire all at the same time, submitting each their either 'on' or 'off' values every time (because if I'd be incrementing the progress bar on 'on' and decrementing it on 'off', then this would be quite a messy behaviour if they'd all fire everytime one is checked or unchecked...)",
+					"I knew I could just add different IDs to each checkbox. Assign different logic for each within the function",
+					"But... such an ugly solution...",
+					"So not elegant and highly repetitive, and I was sure there was a better way."
+				]
+			},
+			{ "Part III" :
+				[ "And then I managed to make it work!",
+					"My progress bar was finally responding to the checkboxes and was incrementing/decrementing its width according to how many were checked.",
+					"phu : )",
+					"After running into a lot of trouble trying to make it work with a for loop that iterates over the different checkboxes (like this):",
+					"for (var i=0, len=y.length; i<len; i++) {",
+					"    if (y[i].checked) {",
+					"        console.log('this is checked');",
+					"    } else {",
+					"        console.log('NOT checked');",
+					"    }",
+					"}",
+					"I followed a suggestion about simply passing an argument into the function-call in the HTML.",
+					"I hadn't considered doing something like this, it seems because I didn't really know enough about the structure of Javascript still - but it seems that in many ways it is quite useful to refer to knowledge I have obtained in python programming, and then consider, try and check whether this would also work in javascript.",
+					"Because: They all are kind of similar after all :)",
+					"So, now my checkbox function works, and I have a visual (mini) representation of my progression through the Nanodegree.",
+					"Later I'll add this code in the base_tem.html to the top of the other pages and create my big alltogetherpage, that'll have this mini visual feedback made in Javascript, one of the fruits of my learning journey for Stage 5.",
+					"And then it's gonna be:",
+					"wow. : )",
+					"a complete website!",
+					": D"
+				]
+			}
+		]
+	}
+]

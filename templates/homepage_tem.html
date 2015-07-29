@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="../img/computer.ico"/>
+		<title>{% block title %}says: Hello!{% endblock title %}</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="{% block style %}../../css/style_home.css{% endblock style %}">
+		<script src="{% block function %}../../js/homepage.js{% endblock function %}"></script>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">
+				<h1>
+					all my stages, all my pages
+				</h1>
+				<form>
+					<div class="checks">
+						<p id="surprise"></p>
+						<div id="container">
+							<div id="progress-bar"></div>
+						</div>
+						<br>
+						<div class="center">
+							<label><input type="checkbox" class="checkbox" name="stage1" value="1" onclick="incrementProgressBar(0)"><a href="/r/stage0">Stage 0</a></label>
+							<label><input type="checkbox" class="checkbox" name="stage0" value="2" onclick="incrementProgressBar(1)"><a href="/r/stage1">Stage 1</a></label>
+							<label><input type="checkbox" class="checkbox" name="stage1" value="3" onclick="incrementProgressBar(2)"><a href="/r/stage2">Stage 2</a></label>
+							<label><input type="checkbox" class="checkbox" name="stage0" value="4" onclick="incrementProgressBar(3)"><a href="/r/stage3">Stage 3</a></label>
+							<label><input type="checkbox" class="checkbox" name="stage1" value="5" onclick="incrementProgressBar(4)"><a href="/r/stage4">Stage 4</a></label>
+							<label><input type="checkbox" class="checkbox" name="stage0" value="6" onclick="incrementProgressBar(5)"><a href="/r/stage5">Stage 5</a></label>
+							<label><input type="checkbox" class="checkbox" name="stage1" value="7" onclick="incrementProgressBar(6)">Revisit</label>
+						</div>
+					</div>
+				</form>
+				<br>
+				<br>
+				<p class="info">
+					&lt;!-- You can click on the names of the different Stages to see what I did as projects for the IPND! --&gt;
+				</p>
+				<br>
+				<hr>
+				<br>
+			</div>
+		</div>
+		<div class="comment">
+			<form method="post" action="/">
+				<label class="info" for="inputfield">If there's something you want to tell me or if you have suggestions on how I can improve, please leave a comment and </label>
+				<input type="submit">
+				<br>
+				<br><textarea id="inputfield" name="comments" rows="5" cols="122"></textarea>
+				<br>
+			</form>
+			<p class="info">{{error}}{{message}}</p>
+		</div>
+		<footer>
+			<div class="signature">
+				IPND
+			</div>
+			<div class="signature">
+				martinmade
+			</div>
+			<div class="signature">
+				may-july 15
+			</div>
+		</footer>
+	</body>
+</html>

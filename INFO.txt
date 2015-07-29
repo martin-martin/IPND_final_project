@@ -1,7 +1,7 @@
 READ THIS FILE IF YOU ARE INTERESTED IN SOME MORE INFORMATION ABOUT MY THOUGHTS AND MY PROCESS WHILE DOING THE INDIVIDUAL STAGES. IT CONTAINS SOME  INFORMATION AND EXPLANATIONS ABOUT WHAT I WAS DOING IN THESE PROJECTS AND MIGHT ANSWER ONE OR TWO POSSIBLE QUESTIONS (AND MAYBE RAISE SOME OHTERS).
 : )
 
--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 BASIC STRUCTURE OF MY FINAL PROJECT:
 This is a stich-job.
@@ -15,38 +15,41 @@ But all together I am quite satisfied with what I created. It looks good to me, 
 If you want to take a look and read the stories that my code tells, I welcome you to my new robe that is in itself a story of how I learned to code.
 
 My final project contains the following resources:
-/css	this folder contains all the CSS files that are used for the online version of the page on appspot
-/data	here lie the files that provide the data for the pages, as far as it was stored outside of the HTML templates.
-	/REVIEW_NOTES	contains three txt files with my communication with the reviewers of my later stages. I was often dissatisfied with the reviews
-					I received, but felt like giving a useful feedback to my reviewers, so I started to create and append this document, that would
-					clarify to the (new) reviewer what happened before, what I said and what I changed.
-	/stage2_auto	just as /stage_auto this contains my original submission for these two stages. They both were composed (partly) of auto-generated
-					pages and I wanted to include the whole functionality in my project repository. If you want to see these pages getting made,
-					you can download these folders and run the files html_generator.py and compile.py respectively.
-	/pages_tems.json 	This file contains a very important part of my final project - I use its data to create multiple pages with one handler using
-						regex. This was something I learned while doing this final project, after all Stages were already submitted and graded.
+/css	this folder contains all the CSS files that are used for the online 		version of the page on appspot
+/data	here lie the files that provide the data for the pages, as far as it
+		was stored outside of the HTML templates.
+	/REVIEW_NOTES	contains three txt files with my communication with the
+					reviewers of my later stages. I was often dissatisfied with the reviews. I received, but felt like giving a useful feedback to my reviewers, so I started to create and append this document, that would clarify to the (new) reviewer what happened before, what I said and what I changed.
+	/stage2_auto	just as /stage_auto this contains my original submission
+					for these two stages. They both were composed (partly) of auto-generated pages and I wanted to include the whole functionality in my project repository. If you want to see these pages getting made, you can download these folders and run the files html_generator.py and compile.py respectively.
+	/pages_tems.json 	This file contains a very important part of my final
+						project - I use its data to create multiple pages with one handler using regex. This was something I learned while doing this final project, after all Stages were already submitted and graded.
 						But it was a very interesting point to learn about, and I'm happy I got it to work, even though my regex knowledge is still
 						only tiny.
 	/s3_content.json
-	/s5_about_js.json 	both files contain data for the respective pages in JSON format
-	/s4_notes_stage_4.text 	this file was added to my stage 4 submission, because due to the nature of my stage 4 project, my notes were entered
-							into the form page I created, and therefore not completely obvious. I included this file as a prove that the first submission was indeed mine.
-/font 	contains the one special font that I used for my stage 2 project. It is a font that is similar to the official python font. Mainly it was 			interesting to learn about the fact that some fonts need to be added if I'll want my page to also display them, and that otherwise there are
+	/s5_about_js.json 	both files contain data for the respective pages in
+						JSON format
+	/s4_notes_stage_4.text 	this file was added to my stage 4 submission,
+							because due to the nature of my stage 4 project, my notes were entered into the form page I created, and therefore not completely obvious. I included this file as a prove that the first submission was indeed mine.
+/font 	contains the one special font that I used for my stage 2 project. It
+		is a font that is similar to the official python font. Mainly it was interesting to learn about the fact that some fonts need to be added if I'll want my page to also display them, and that otherwise there are
 		browser standards that the (missing) font gets replaced by.
-/img 	in this folder are all the images that I use for the respective stages. There is also one additional image, a favicon that I created now while
-		doing the final project putting all stages together. I made it myself with one online tool, and I find it quite cute actually :)
-/js 	in here is the (so far) only .JS file that I am using for this project. I created it while working on Stage 5, and I am also using it for the
-		functionality of the landing page. It's not a lot of JS, but I worked on it for quite a while, trying to learn and understand things about this new language. Knowing a bit of python helped a lot, but I'm only a very beginner in all this.
-/templates		this folder contains all the HTML templates that get rendered for my appspot final IPND page. They are sorted in stages, with some 					files also just directly in the parent directory, if they don't belong to a specific stage but more the final project.
-	/links_tem.html 	is a file that I am currently not yet using, which would in the end contain some kind of bibliography of the links that I
-						used and learned from. I haven't yet made it, also because I am not completely sure as of how I'd want it to be.
+/img 	in this folder are all the images that I use for the respective
+		stages. There is also one additional image, a favicon that I created now while doing the final project putting all stages together. I made it myself with one online tool, and I find it quite cute actually :)
+/js 	in here are the (so far) only .JS files that I am using for this
+		project. I created it while working on Stage 5, and I am also using it for the functionality of the landing page. It's not a lot of JS, but I worked on it for quite a while, trying to learn and understand things about this new language. Knowing a bit of python helped a lot, but I'm only a very beginner in all this.
+/templates		this folder contains all the HTML templates that get rendered
+				for my appspot final IPND page. They are sorted in stages, with some files also just directly in the parent directory, if they don't belong to a specific stage but more the final project.
+	/links_tem.html 	is a file that I am currently not yet using, which
+						would in the end contain some kind of bibliography of the links that I used and learned from. I haven't yet made it, also because I am not completely sure as of how I'd want it to be.
 /app.yaml 	the .yaml file for my project. I'm happy to have gotten my URL :)
-/compile.py 	this is the python file that does all the compiling, basically the heart of the project. It assigns the handlers and calls appengines
-				services, classes and methods, and here I do a lot of the stitching together.
-/INFO.txt 		And finally: this file itself. Probably best described as a mix of a README and a reflective diary entry. :)
+/compile.py 	this is the python file that does all the compiling, basically
+				the heart of the project. It assigns the handlers and calls appengines services, classes and methods, and here I do a lot of the stitching together.
+/INFO.txt 		And finally: this file itself. Probably best described as a
+				mix of a README and a reflective diary entry. :)
 
 
--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 STAGE 0:
 After having previously played a bit on some online platforms, this was the first time I actually sat down to code a webpage. It was quite exciting to see things come together, especially proud I was at the orange frames around my tag symbol examples. :)
@@ -91,7 +94,7 @@ Well, for this project I wanted to make a progress bar, because I am often missi
 
 
 
--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 FORUM POST:
 Hei everyone!
@@ -108,7 +111,7 @@ I'd be very glad to receive tips and comments, so if there's something you know 
 
 Digging through my code again I also unearthed some yet unanswered questions that I'll post here. Some I answered now on the way, some I'm hoping to get some good tips :) Maybe this can give a direction of what to look for (because I know that all these projects at once is probably a bit too big a piece to swallow).
 
--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 QUESTIONS:
 - What is good practice for naming colours in CSS? Is it good to write them in RGB or in HEX values, or with color names (if possible). In my stage 2 CSS I included an english-word explanation of the hex values of the colours that I am using in that file. Is this a common practice and a good idea?
@@ -125,7 +128,7 @@ QUESTIONS:
 
 - (compile.py) Why does loading the pages_tems.json file just inside of the StagesPages class as a class variable not work out? When I move it to the get() method it works, however loading it before, outside method but inside the class, pages_tems_dict = json.load(open("data/pages_tems.json")) returns me an error stating that pages_tems_dict is not defined. Shouldn't it, when put inside the class but outside of a method, be loading as a class variable and then be available to all the classes' methods?
 
--------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
 Thanks for any input, and I hope you'll maybe have a nice time looking through my pages or my code!
 

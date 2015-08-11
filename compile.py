@@ -76,7 +76,9 @@ class StagePages(Handler):
                 # assign "back" to one index before and "forward" to one index place after current page
                 back = pages_tems_dict["page_list"][count-1]
                 forward = pages_tems_dict["page_list"][count+1]
-        if regex == "stage3":
+        if regex == "stage0":
+            back = "/"
+        elif regex == "stage3":
             back = "stage2"
             forward = "/stage3/re-use"
         elif regex == "stage4":

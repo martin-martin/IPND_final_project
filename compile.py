@@ -13,6 +13,13 @@ template_loader = jinja2.FileSystemLoader(template_dir)
 # text input. Through this I can make my website more secure and provide a better user experience.
 template_env = jinja2.Environment(loader = template_loader, autoescape = True)
 
+def date_to_date_string(date_object):
+    '''renders a date object into a string containing the date'''
+    return date_object.strftime('%Y-%m-%d %H:%M') + " (UTC)"
+
+# sets a filter that I use in Stage 4 to format a string date
+template_env.filters["datestring"] = date_to_date_string
+
 class Handler(webapp2.RequestHandler):
     """contains the basic methods for rendering the templates into html pages"""
     def write(self, *arguments, **kw_arguments):
@@ -125,12 +132,12 @@ class UserPage(Handler):
             topics = i.topics
             content = i.content
             name = i.name
-            date = i.date
+            post_date = i.post_date
             css = i.css
             smile = i.smile
         # calling the render function with the arguments to display the page
         self.render('stage4/page_tem.html', topics = topics, content = content, name = name,
-            date = date, css = css, smile = smile)
+            post_date = post_date, css = css, smile = smile)
 
     def post(self):
         # the code following here gets the value of a query parameter
@@ -144,11 +151,9 @@ class UserPage(Handler):
                 "! this was very interesting !", "* this made me smile *"]
         # get_all collects all the values of the specified query parameter and unifies them into a list
         paragraphs = self.request.get_all("content")
-        # the next lines including the loop create a dictionary mapping the topics as keys to the paragraphs as values
-        content = {}
-        # a cool way of iterating with a for loop with index! thanks to my 2nd reviewer :)
-        for index, topic in enumerate(topics):
-            content[topic] = paragraphs[index]
+        # the next line creates a dictionary mapping the topics as keys to the
+        # paragraphs as values, using dict comprehension
+        content = {topic: paragraphs[index] for (index, topic) in enumerate(topics)}
         # sets the blank value to False by default, then tests if the name field is filled only by blanks
         blank = False
         if name.isspace():

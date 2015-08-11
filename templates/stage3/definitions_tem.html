@@ -22,7 +22,7 @@
 	</header>
 	<div class="definitions">
 		{% for d in definitions %}<div class="def-box">
-			<strong>{{d[0]}}</strong>{{d[1]}}
+			<strong>{{d[0]}}</strong>{{d[1]|safe}}
 		</div>{% endfor %}
 	</div>
 </section>
@@ -37,7 +37,7 @@
 		<div class="content">
 			{% for p in value %}
 			<p>
-				{{p}}
+				{{p|safe}}
 			</p>{% endfor %}
 		</div>
 	</div>{% endfor %}

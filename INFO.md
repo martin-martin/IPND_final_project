@@ -159,23 +159,6 @@ Digging through my code again I also unearthed some yet unanswered questions tha
 
 ---------
 
-**QUESTIONS:**
-
-- What is good practice for naming colours in CSS? Is it good to write them in RGB or in HEX values, or with color names (if possible). In my stage 2 CSS I included an english-word explanation of the hex values of the colours that I am using in that file. Is this a common practice and a good idea?
-
-- How do I reference code of someone else that I used? A link in the comments?
-
-- *(Stage3)* Since I am using a JSON file for the content, and jinja for the templates (and I set autoescape=True), how do I format specific parts of my text input? Earlier I used to write the HTML tags into the content file, and they would render while the page would compile. However this is unsafe and I'd like to autoescape, but then all my tags are escaped and no formatting is applied (visible on /stage3/info). How can I do this better?
-
-- *(Stage3)* In the CSS code that I took from the net, the person used a lot of structure like this: .tree li span etc. I know I also heard that one should avoid this and instead assign new classes for the sub-categories. Is there a good practice suggestion about this?
-
-- *(compile.py)* How to make regex also accept the "/" character?
-
-- *(compile.py)* How to search with regex for everything except some things, so I wouldn't need to make this /r/ part in my regex-generated URLs. I added this into the URL because otherwise it would also return the pages for Stage 3 - 5, which need different parameters as inputs than the Stages 0 - 2. The latter were all not made using templates, so they don't need **kwargs.
-
-- *(compile.py)* Why does loading the pages_tems.json file just inside of the StagesPages class as a class variable not work out? When I move it to the get() method it works, however loading it before, outside method but inside the class, pages_tems_dict = json.load(open("data/pages_tems.json")) returns me an error stating that pages_tems_dict is not defined. Shouldn't it, when put inside the class but outside of a method, be loading as a class variable and then be available to all the classes' methods?
-
----------
 
 Thanks for any input, and I hope you'll maybe have a nice time looking through my pages or my code!
 

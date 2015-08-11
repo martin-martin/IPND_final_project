@@ -7,6 +7,6 @@ Feel free to leave a note, I'm glad for comments and tips that can help me impro
 
 The website is up and accessible here: http://ipnd-all.appspot.com/
 
-There's also a file in the repository that explains my process more in detail in case someone is interested to take a look: INFO.txt
+There's also a file in the repository that explains my process more in detail in case someone is interested to take a look: INFO.md
 
 
